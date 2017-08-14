@@ -1,0 +1,285 @@
+2017-08-14 16:09:46 [scrapy.utils.log] INFO: Scrapy 1.4.0 started (bot: GoldPillow)
+2017-08-14 16:09:46 [scrapy.utils.log] INFO: Overridden settings: {'BOT_NAME': 'GoldPillow', 'DOWNLOAD_DELAY': 5, 'FEED_FORMAT': 'csv', 'FEED_URI': 'pin-tuan.csv', 'LOG_FILE': 'log.txt', 'NEWSPIDER_MODULE': 'GoldPillow.spiders', 'SPIDER_MODULES': ['GoldPillow.spiders'], 'USER_AGENT': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_3) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.54 Safari/536.5'}
+2017-08-14 16:09:47 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats']
+2017-08-14 16:09:48 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2017-08-14 16:09:48 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2017-08-14 16:09:48 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2017-08-14 16:09:48 [scrapy.core.engine] INFO: Spider opened
+2017-08-14 16:09:48 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-08-14 16:09:48 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2017-08-14 16:09:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://weixin.sogou.com/weixin?query=%27%E6%8B%BC%E5%9B%A2%27&_sug_type_=&s_from=input&_sug_=n&type=2&ie=utf8&page=1> (referer: None)
+2017-08-14 16:09:49 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%27%E6%8B%BC%E5%9B%A2%27&_sug_type_=&s_from=input&_sug_=n&type=2&ie=utf8&page=1>
+{'name': '河南移动', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502698176&ver=1&signature=Z91k1jiwpRNEPnkjo0W02fD61PL0IAd67x9Z9Mg8bFZp8KnoApo38yNlEBzdrOXE7iOIspR*HisaLH4ajPUY*w=='}
+2017-08-14 16:09:49 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%27%E6%8B%BC%E5%9B%A2%27&_sug_type_=&s_from=input&_sug_=n&type=2&ie=utf8&page=1>
+{'name': '河南移动', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502698176&ver=1&signature=Z91k1jiwpRNEPnkjo0W02fD61PL0IAd67x9Z9Mg8bFZp8KnoApo38yNlEBzdrOXE7iOIspR*HisaLH4ajPUY*w=='}
+2017-08-14 16:09:49 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%27%E6%8B%BC%E5%9B%A2%27&_sug_type_=&s_from=input&_sug_=n&type=2&ie=utf8&page=1>
+{'name': '小小包麻麻', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502698176&ver=1&signature=m8WkqKqkPWkKRhCdt3aGcRMsbsuplxHER57Bb1MnmKOA584hjxc8oDWFmBsY9Phz5PCpIpe2lfm17UWfeeyVow=='}
+2017-08-14 16:09:49 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%27%E6%8B%BC%E5%9B%A2%27&_sug_type_=&s_from=input&_sug_=n&type=2&ie=utf8&page=1>
+{'name': '运城移动', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502698176&ver=1&signature=7DiHMChRICbmTwC7iv6teZZRAJyqCoyAOhK-cJyjmH3T6xE9mmjukr2MAdX7h9lu51H*8mC-LLtBORsaSIW3rQ=='}
+2017-08-14 16:09:49 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%27%E6%8B%BC%E5%9B%A2%27&_sug_type_=&s_from=input&_sug_=n&type=2&ie=utf8&page=1>
+{'name': '广州移动', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502698176&ver=1&signature=pC*0jwF4JiQV2sA6P4zu5EBD*Y8x41r6edcCBwz8NohJCx822CcGGzVrUHe6Cetrvut9njAlYCttdNTWo1aXBQ=='}
+2017-08-14 16:09:49 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%27%E6%8B%BC%E5%9B%A2%27&_sug_type_=&s_from=input&_sug_=n&type=2&ie=utf8&page=1>
+{'name': '导游领队圈', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502698176&ver=1&signature=6BWFIwz8AFqAy4c9LhfLDQSsLQcvJYBgfqRN9vEqTOOPB5qm3zV6NDddREmQLMX42f1867SVaItR2Xkr2eOh-Q=='}
+2017-08-14 16:09:49 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%27%E6%8B%BC%E5%9B%A2%27&_sug_type_=&s_from=input&_sug_=n&type=2&ie=utf8&page=1>
+{'name': '中国移动沈阳公司', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502698176&ver=1&signature=BztW*77jj6QaRvhjzBebrPlIBGdzXZ9EyQUvmg2bK6jKSush8aPXxdkc-ZE3xBI4IF2djDsaiQY7OH4fMjdy-g=='}
+2017-08-14 16:09:49 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%27%E6%8B%BC%E5%9B%A2%27&_sug_type_=&s_from=input&_sug_=n&type=2&ie=utf8&page=1>
+{'name': '运城移动', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502698176&ver=1&signature=7DiHMChRICbmTwC7iv6teZZRAJyqCoyAOhK-cJyjmH3T6xE9mmjukr2MAdX7h9lu51H*8mC-LLtBORsaSIW3rQ=='}
+2017-08-14 16:09:49 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%27%E6%8B%BC%E5%9B%A2%27&_sug_type_=&s_from=input&_sug_=n&type=2&ie=utf8&page=1>
+{'name': '指上姑苏', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502698176&ver=1&signature=uGcuSDbz0qJ4RF-FFaqUcPrL063pcMHpPcSOk1ABceVI7mR21oLKyMAC7oxefUtN1u2kcU85jKTde*ClVX9fQg=='}
+2017-08-14 16:09:49 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%27%E6%8B%BC%E5%9B%A2%27&_sug_type_=&s_from=input&_sug_=n&type=2&ie=utf8&page=1>
+{'name': '亲子营', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502698176&ver=1&signature=Y2Uy-vUlxDqp*dyjDdWeHFuAs6UP2DLp7OtD9FM0*1AJuFl0UlTRX1NaIJ4ccwy1PM4Xg6UkvWzehHFEnLlUdQ=='}
+2017-08-14 16:09:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://weixin.sogou.com/weixin?query=%27%E6%8B%BC%E5%9B%A2%27&_sug_type_=&s_from=input&_sug_=n&type=2&page=2&ie=utf8> (referer: http://weixin.sogou.com/weixin?query=%27%E6%8B%BC%E5%9B%A2%27&_sug_type_=&s_from=input&_sug_=n&type=2&ie=utf8&page=1)
+2017-08-14 16:09:55 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%27%E6%8B%BC%E5%9B%A2%27&_sug_type_=&s_from=input&_sug_=n&type=2&page=2&ie=utf8>
+{'name': '童书共读', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502698182&ver=1&signature=Y*Qu1pRWU5i0tsaJRw-PPH9609gvN1B9KP82GErc7KDQyb6Pt*jq-NIt1nnCSDEDEWxRu63i62fHNB*VX6Ci4A=='}
+2017-08-14 16:09:55 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%27%E6%8B%BC%E5%9B%A2%27&_sug_type_=&s_from=input&_sug_=n&type=2&page=2&ie=utf8>
+{'name': '暖暖妈爱分享', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502698182&ver=1&signature=1feRupuhv7fmLeXw87boC0hof3E57gLuFS0xDXR7kYG4WIO1kQwpSius69M0Mz*YaFlTUY8QufrBbQaUjzUY1Q=='}
+2017-08-14 16:09:55 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%27%E6%8B%BC%E5%9B%A2%27&_sug_type_=&s_from=input&_sug_=n&type=2&page=2&ie=utf8>
+{'name': '亿邦动力网', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502698182&ver=1&signature=emzG8REC*jw0PslKpeYmAQPbvjov*AVrYfhdqVrpAIeoRVgnmkmv3T8RiOl6cTulGs*bzwd1-Yk6o2ElVkaPpQ=='}
+2017-08-14 16:09:55 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%27%E6%8B%BC%E5%9B%A2%27&_sug_type_=&s_from=input&_sug_=n&type=2&page=2&ie=utf8>
+{'name': '亿邦动力网', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502698182&ver=1&signature=emzG8REC*jw0PslKpeYmAQPbvjov*AVrYfhdqVrpAIeoRVgnmkmv3T8RiOl6cTulGs*bzwd1-Yk6o2ElVkaPpQ=='}
+2017-08-14 16:09:55 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%27%E6%8B%BC%E5%9B%A2%27&_sug_type_=&s_from=input&_sug_=n&type=2&page=2&ie=utf8>
+{'name': '晋城移动', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502698182&ver=1&signature=Rzbxw33vyS7lpxX7MNDQZre0KMtq-1EeY6Hpvh33Xqe54XS*GCAeU7Zvg0KPvk6fvE0PMgmNmM8ZJab*Z5TFCA=='}
+2017-08-14 16:09:55 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%27%E6%8B%BC%E5%9B%A2%27&_sug_type_=&s_from=input&_sug_=n&type=2&page=2&ie=utf8>
+{'name': '亲子营', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502698182&ver=1&signature=Y2Uy-vUlxDqp*dyjDdWeHFuAs6UP2DLp7OtD9FM0*1AJuFl0UlTRX1NaIJ4ccwy10z8arr60I9zvl5vA40no4g=='}
+2017-08-14 16:09:55 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%27%E6%8B%BC%E5%9B%A2%27&_sug_type_=&s_from=input&_sug_=n&type=2&page=2&ie=utf8>
+{'name': '聚爱财', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502698182&ver=1&signature=FV7jtyHpHb3icHcMF3sCX2FcI-Ps9SvJQ9ZtAplCoXS0278SZeZHV8rV6WAllPAnSSwcv1MBzQNn4eS24devLw=='}
+2017-08-14 16:09:55 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%27%E6%8B%BC%E5%9B%A2%27&_sug_type_=&s_from=input&_sug_=n&type=2&page=2&ie=utf8>
+{'name': '36氪', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502698182&ver=1&signature=koSidSgITuzLs8C6l0eXP49hNKWfzpx38mVNr494je8S0sw8JmAGeyMXE6bR4RoKg0zXPlIKTiSMlCDg89fhcw=='}
+2017-08-14 16:09:55 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%27%E6%8B%BC%E5%9B%A2%27&_sug_type_=&s_from=input&_sug_=n&type=2&page=2&ie=utf8>
+{'name': '童书共读', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502698182&ver=1&signature=Y*Qu1pRWU5i0tsaJRw-PPH9609gvN1B9KP82GErc7KDQyb6Pt*jq-NIt1nnCSDEDEWxRu63i62fHNB*VX6Ci4A=='}
+2017-08-14 16:09:55 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%27%E6%8B%BC%E5%9B%A2%27&_sug_type_=&s_from=input&_sug_=n&type=2&page=2&ie=utf8>
+{'name': '运城移动', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502698182&ver=1&signature=7DiHMChRICbmTwC7iv6teZZRAJyqCoyAOhK-cJyjmH3T6xE9mmjukr2MAdX7h9lufHU409eId5CVfzmvGaDauw=='}
+2017-08-14 16:09:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://weixin.sogou.com/weixin?query=%27%E6%8B%BC%E5%9B%A2%27&_sug_type_=&s_from=input&_sug_=n&type=2&page=3&ie=utf8> (referer: http://weixin.sogou.com/weixin?query=%27%E6%8B%BC%E5%9B%A2%27&_sug_type_=&s_from=input&_sug_=n&type=2&page=2&ie=utf8)
+2017-08-14 16:09:59 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%27%E6%8B%BC%E5%9B%A2%27&_sug_type_=&s_from=input&_sug_=n&type=2&page=3&ie=utf8>
+{'name': 'SUV大师', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502698187&ver=1&signature=ksvJ7chXE66SJ8RNc5i8-QXKJkDfpjDgwf1uUR7l2vMKeiK-cFZM4teZlRO0PlQJYqvtMfOIh1llZOnq6O17ZQ=='}
+2017-08-14 16:09:59 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%27%E6%8B%BC%E5%9B%A2%27&_sug_type_=&s_from=input&_sug_=n&type=2&page=3&ie=utf8>
+{'name': '央视财经', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502698187&ver=1&signature=qlS8MxAXwMgZgo*N2ifiPJ3TxNU4u7yI3pfmGRooMHZ4YUcUjmJyphXU7DakCc*s6Qj89WC2Zi5Ltspwhrww-Q=='}
+2017-08-14 16:09:59 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%27%E6%8B%BC%E5%9B%A2%27&_sug_type_=&s_from=input&_sug_=n&type=2&page=3&ie=utf8>
+{'name': '小小包麻麻', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502698187&ver=1&signature=m8WkqKqkPWkKRhCdt3aGcRMsbsuplxHER57Bb1MnmKOA584hjxc8oDWFmBsY9PhzSdXMmQMYM8s6T9UqK033iQ=='}
+2017-08-14 16:09:59 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%27%E6%8B%BC%E5%9B%A2%27&_sug_type_=&s_from=input&_sug_=n&type=2&page=3&ie=utf8>
+{'name': '吃喝玩乐生活IN广州', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502698187&ver=1&signature=k6ybgCJHkyAi*rnAWZ3MDaAduh4yxFNEzKxXtK-m1IzyxzBWGidrJwSLOibsAS6*krZANZxm-ePR1lLeCYBWzA=='}
+2017-08-14 16:09:59 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%27%E6%8B%BC%E5%9B%A2%27&_sug_type_=&s_from=input&_sug_=n&type=2&page=3&ie=utf8>
+{'name': '晋城移动', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502698187&ver=1&signature=Rzbxw33vyS7lpxX7MNDQZre0KMtq-1EeY6Hpvh33Xqe54XS*GCAeU7Zvg0KPvk6fHY2*3v3fBkxMtqiDoHumag=='}
+2017-08-14 16:09:59 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%27%E6%8B%BC%E5%9B%A2%27&_sug_type_=&s_from=input&_sug_=n&type=2&page=3&ie=utf8>
+{'name': '宁波那些事儿', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502698187&ver=1&signature=rbIkSYWbUvRmfDo2fYMOePg1gCbcVI2hBkcWmCJpz5E5Q*wICmbOMeF0w7GL7F-RImLW*8fBKxjRhI3YDL-COg=='}
+2017-08-14 16:09:59 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%27%E6%8B%BC%E5%9B%A2%27&_sug_type_=&s_from=input&_sug_=n&type=2&page=3&ie=utf8>
+{'name': '99广场舞', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502698187&ver=1&signature=iWAjB3fV0BZZ*uj*EnpU9hn2rWSxOh4zkZ3Sj-tZqCVg19bZHmqUDGFPZ9bdtrHFAuUGea0CUfe-q*7lWvS-AQ=='}
+2017-08-14 16:09:59 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%27%E6%8B%BC%E5%9B%A2%27&_sug_type_=&s_from=input&_sug_=n&type=2&page=3&ie=utf8>
+{'name': '暖暖妈爱分享', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502698187&ver=1&signature=1feRupuhv7fmLeXw87boC0hof3E57gLuFS0xDXR7kYG4WIO1kQwpSius69M0Mz*Yqk9TLy-5FsmETSEu-jHdng=='}
+2017-08-14 16:09:59 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%27%E6%8B%BC%E5%9B%A2%27&_sug_type_=&s_from=input&_sug_=n&type=2&page=3&ie=utf8>
+{'name': '福州身边事', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502698187&ver=1&signature=zyL04TVgFQ4c0heCb0JYDfTS0JJLlbiZQMDYFJ1ynwi4cc-lbMinAXxJNQGluMf2BFU1wW*sp6YAPK6G7vRAbg=='}
+2017-08-14 16:09:59 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%27%E6%8B%BC%E5%9B%A2%27&_sug_type_=&s_from=input&_sug_=n&type=2&page=3&ie=utf8>
+{'name': '晋城移动', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502698187&ver=1&signature=Rzbxw33vyS7lpxX7MNDQZre0KMtq-1EeY6Hpvh33Xqe54XS*GCAeU7Zvg0KPvk6fHY2*3v3fBkxMtqiDoHumag=='}
+2017-08-14 16:10:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://weixin.sogou.com/weixin?query=%27%E6%8B%BC%E5%9B%A2%27&_sug_type_=&s_from=input&_sug_=n&type=2&page=4&ie=utf8> (referer: http://weixin.sogou.com/weixin?query=%27%E6%8B%BC%E5%9B%A2%27&_sug_type_=&s_from=input&_sug_=n&type=2&page=3&ie=utf8)
+2017-08-14 16:10:05 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%27%E6%8B%BC%E5%9B%A2%27&_sug_type_=&s_from=input&_sug_=n&type=2&page=4&ie=utf8>
+{'name': '活在金沙洲', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502698193&ver=1&signature=-iFcHzSFrue538npCAtPFotnLgOWHZDJYYPijC9BYXBrEuA0T0ivVE6EwRQ11-Y8IKUFIliMeUiFapGulK6XNQ=='}
+2017-08-14 16:10:05 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%27%E6%8B%BC%E5%9B%A2%27&_sug_type_=&s_from=input&_sug_=n&type=2&page=4&ie=utf8>
+{'name': '番禺番娱', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502698193&ver=1&signature=9g8HtmY05beo*Qel1i0wL23hDR3Qah2ZHNCsCZrqy4HwR1DrmiaTBBOYJ4MRcQKKUvt7fNOP2TlKvdx6ctbF7Q=='}
+2017-08-14 16:10:05 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%27%E6%8B%BC%E5%9B%A2%27&_sug_type_=&s_from=input&_sug_=n&type=2&page=4&ie=utf8>
+{'name': '菜菜美食日记', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502698193&ver=1&signature=cu-mQxnqY5QgyMX4Ur*9P4cEicfb6wE2nWZQSRDnqr4jEOWautgR46VUAyxKupY*29iUTi9UACFTGe-Q1FeCyQ=='}
+2017-08-14 16:10:05 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%27%E6%8B%BC%E5%9B%A2%27&_sug_type_=&s_from=input&_sug_=n&type=2&page=4&ie=utf8>
+{'name': '大佛山美食', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502698193&ver=1&signature=5Zx3LWIDjT92E5tp4nIIyRh--OqvO3wdHUdSoEPZdIBB1PyGtavNxZDOYz1lg3GzxmF6CJxy6NwFqSIJav4Z3w=='}
+2017-08-14 16:10:05 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%27%E6%8B%BC%E5%9B%A2%27&_sug_type_=&s_from=input&_sug_=n&type=2&page=4&ie=utf8>
+{'name': '孩子王官方', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502698193&ver=1&signature=bNVjDvXIya*4LarmO5K1bgECo0qTV3ZXbGEwZ9D9PM2erFK--TA5WT0bC1xSsYIk14T*7Ax*O4sKAXfpPmGtMA=='}
+2017-08-14 16:10:05 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%27%E6%8B%BC%E5%9B%A2%27&_sug_type_=&s_from=input&_sug_=n&type=2&page=4&ie=utf8>
+{'name': '姑苏网', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502698193&ver=1&signature=5gF0w93TU7gvkL3pCarMbyycolvhTpodWEdWKreYc7qzYGzq39MIrgauMgD4nobwL58kTKoXotiTk*T8xntLOQ=='}
+2017-08-14 16:10:05 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%27%E6%8B%BC%E5%9B%A2%27&_sug_type_=&s_from=input&_sug_=n&type=2&page=4&ie=utf8>
+{'name': '康美时代', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502698193&ver=1&signature=*rOaVu3aJeQ0j5y*mIwc458xxV6tDV6z3IvqF6ZoPhu95qJ*g8AF-*JWJ5Q339d-PMwvO8DvxnvNsnUTQk0uQg=='}
+2017-08-14 16:10:05 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%27%E6%8B%BC%E5%9B%A2%27&_sug_type_=&s_from=input&_sug_=n&type=2&page=4&ie=utf8>
+{'name': '花点时间吧', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502698193&ver=1&signature=2W7dii7lH15vbQ-8oYHxEn8UJrrE2S3tYoNDXuCjA-m5MlelhueiXkSLKBSSC438kMFnMhKLKr5Cnuw5Xc2UqA=='}
+2017-08-14 16:10:05 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%27%E6%8B%BC%E5%9B%A2%27&_sug_type_=&s_from=input&_sug_=n&type=2&page=4&ie=utf8>
+{'name': '楚天都市报', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502698193&ver=1&signature=kC46BcPI2I*-K7tlmQitc0BkeLxBx8ivq9EzMxf7-KbEGY85F3KVa1skcBQNjnaHMJnklqwHmT*bDl-wdNNDtQ=='}
+2017-08-14 16:10:05 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%27%E6%8B%BC%E5%9B%A2%27&_sug_type_=&s_from=input&_sug_=n&type=2&page=4&ie=utf8>
+{'name': '老G钓鱼饵料', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502698193&ver=1&signature=ZNRDkVKw56aZA1xeC5vzPAHnpRZSYlnfp6TMB99JY6ZmiCBE0einxtLVS8R7VOVEcXvoStbkW80KRrYr6VfCpg=='}
+2017-08-14 16:10:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://weixin.sogou.com/weixin?query=%27%E6%8B%BC%E5%9B%A2%27&_sug_type_=&s_from=input&_sug_=n&type=2&page=5&ie=utf8> (referer: http://weixin.sogou.com/weixin?query=%27%E6%8B%BC%E5%9B%A2%27&_sug_type_=&s_from=input&_sug_=n&type=2&page=4&ie=utf8)
+2017-08-14 16:10:12 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%27%E6%8B%BC%E5%9B%A2%27&_sug_type_=&s_from=input&_sug_=n&type=2&page=5&ie=utf8>
+{'name': '伊家人商城', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502698200&ver=1&signature=lCj8wiuPeg7D0yTeemIzlxJbyN2DXJ5sgP3JUJkRt*5nmBvlWvq-tIfDyZhm4ZZkyP3*X76-MLY1plQ6vQ9U4g=='}
+2017-08-14 16:10:12 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%27%E6%8B%BC%E5%9B%A2%27&_sug_type_=&s_from=input&_sug_=n&type=2&page=5&ie=utf8>
+{'name': '导游小圈', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502698200&ver=1&signature=3n5hjg2b*Ar6FdoxYggmpmrt7BEfZqF6N0zh6IwV4QiwuMjYhBww85n0MZRixt*jHXsoeQqSU3o9k9uBxu9TxA=='}
+2017-08-14 16:10:12 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%27%E6%8B%BC%E5%9B%A2%27&_sug_type_=&s_from=input&_sug_=n&type=2&page=5&ie=utf8>
+{'name': '北京生活播报', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502698200&ver=1&signature=nhHgX*znegpD2hlzmgcbXdHypInp91V6X85*Xq6Qoi9Tg5CE3Ou6kdwuVTHFX1ExSR42oUX7wRkYFYn5iF3T4w=='}
+2017-08-14 16:10:12 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%27%E6%8B%BC%E5%9B%A2%27&_sug_type_=&s_from=input&_sug_=n&type=2&page=5&ie=utf8>
+{'name': '老G钓鱼饵料', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502698200&ver=1&signature=ZNRDkVKw56aZA1xeC5vzPAHnpRZSYlnfp6TMB99JY6ZmiCBE0einxtLVS8R7VOVEgk6jPY6n4zjIeocJVQPCOw=='}
+2017-08-14 16:10:12 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%27%E6%8B%BC%E5%9B%A2%27&_sug_type_=&s_from=input&_sug_=n&type=2&page=5&ie=utf8>
+{'name': '电商侠课堂', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502698200&ver=1&signature=uM*l73UDU4AyQddCCi6m0L-QkKaRA0vyD*gqdvK0cupNUvXgykDAjY5uZZLyMWfWAYpIfw2A6AFNHypgq7bfzA=='}
+2017-08-14 16:10:12 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%27%E6%8B%BC%E5%9B%A2%27&_sug_type_=&s_from=input&_sug_=n&type=2&page=5&ie=utf8>
+{'name': '十点测大盘', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502698200&ver=1&signature=RXA5ZX-*E8X1QqGcb1YLoXY-LfG1BKCSExKDbDwYjufyr61TPP14uKEamAIYBsuJE7SSsG-wQDgv0rLfza-KFg=='}
+2017-08-14 16:10:12 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%27%E6%8B%BC%E5%9B%A2%27&_sug_type_=&s_from=input&_sug_=n&type=2&page=5&ie=utf8>
+{'name': '山西黄河少儿艺术团什贴分团', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502698200&ver=1&signature=Y6cvkLUit1LLqDbhDo9sHsuEXJHmOpuzs*87cTH*Luvk9Uo5szCbSzHg0wNUS4fPeveKu1QR3odhlwRVfQs55Q=='}
+2017-08-14 16:10:12 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%27%E6%8B%BC%E5%9B%A2%27&_sug_type_=&s_from=input&_sug_=n&type=2&page=5&ie=utf8>
+{'name': '暖暖妈爱分享', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502698200&ver=1&signature=1feRupuhv7fmLeXw87boC0hof3E57gLuFS0xDXR7kYG4WIO1kQwpSius69M0Mz*YTLf*kUtZvh6JsAF637SwXA=='}
+2017-08-14 16:10:12 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%27%E6%8B%BC%E5%9B%A2%27&_sug_type_=&s_from=input&_sug_=n&type=2&page=5&ie=utf8>
+{'name': '暖暖妈爱分享', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502698200&ver=1&signature=1feRupuhv7fmLeXw87boC0hof3E57gLuFS0xDXR7kYG4WIO1kQwpSius69M0Mz*YTLf*kUtZvh6JsAF637SwXA=='}
+2017-08-14 16:10:12 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%27%E6%8B%BC%E5%9B%A2%27&_sug_type_=&s_from=input&_sug_=n&type=2&page=5&ie=utf8>
+{'name': '健康生活小常识', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502698200&ver=1&signature=yN-3Awn2cjz-zjklKNWAJMBS7HseE7JEEwhOjfUPhoUbnU20MQqpyeCSXMk1KktysIkgROb2I7r4EBC3MOkMfw=='}
+2017-08-14 16:10:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://weixin.sogou.com/weixin?query=%27%E6%8B%BC%E5%9B%A2%27&_sug_type_=&s_from=input&_sug_=n&type=2&page=6&ie=utf8> (referer: http://weixin.sogou.com/weixin?query=%27%E6%8B%BC%E5%9B%A2%27&_sug_type_=&s_from=input&_sug_=n&type=2&page=5&ie=utf8)
+2017-08-14 16:10:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%27%E6%8B%BC%E5%9B%A2%27&_sug_type_=&s_from=input&_sug_=n&type=2&page=6&ie=utf8>
+{'name': '尹建莉父母学堂', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502698207&ver=1&signature=cs6b0SNBXxhCBXg2vKwiFtQfCZmbJ7aOxdRg1JxJCxNAZBmOqpGmjtysd88bpaM1TzDkVpRM2Tg*PoA9h6ri-g=='}
+2017-08-14 16:10:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%27%E6%8B%BC%E5%9B%A2%27&_sug_type_=&s_from=input&_sug_=n&type=2&page=6&ie=utf8>
+{'name': '亲子营', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502698207&ver=1&signature=Y2Uy-vUlxDqp*dyjDdWeHFuAs6UP2DLp7OtD9FM0*1AJuFl0UlTRX1NaIJ4ccwy1YbJkg2CBrK8AfZqvA7Vxfw=='}
+2017-08-14 16:10:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%27%E6%8B%BC%E5%9B%A2%27&_sug_type_=&s_from=input&_sug_=n&type=2&page=6&ie=utf8>
+{'name': '科学家庭育儿', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502698207&ver=1&signature=oaBAi7ZGkKw9bheMJweOjxw9jFUBuTyIu6eLxkpjMmOjuXRlnNVtHoUSX*pDIhoKRfw1P57UNP8F9j8LVup2wg=='}
+2017-08-14 16:10:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%27%E6%8B%BC%E5%9B%A2%27&_sug_type_=&s_from=input&_sug_=n&type=2&page=6&ie=utf8>
+{'name': '童书来了', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502698207&ver=1&signature=IDbWppQ*dzF*LQLc8boyU01XynE9C9a3mxi6aF9PcATunn6RULIsKQS*aOb*oZdAFJV4brHmqPr4Rc0TjHr6bg=='}
+2017-08-14 16:10:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%27%E6%8B%BC%E5%9B%A2%27&_sug_type_=&s_from=input&_sug_=n&type=2&page=6&ie=utf8>
+{'name': '科学家庭育儿', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502698207&ver=1&signature=oaBAi7ZGkKw9bheMJweOjxw9jFUBuTyIu6eLxkpjMmOjuXRlnNVtHoUSX*pDIhoKRfw1P57UNP8F9j8LVup2wg=='}
+2017-08-14 16:10:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%27%E6%8B%BC%E5%9B%A2%27&_sug_type_=&s_from=input&_sug_=n&type=2&page=6&ie=utf8>
+{'name': '大豫网', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502698207&ver=1&signature=xql*AV5buUOuH6EuzQVYy2MaKJyP5x*u-CcUTW4G-5Lzkscd92LUYWZHKXJ77Qa5DWxSRL6Xw5c5keVD1uPNdg=='}
+2017-08-14 16:10:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%27%E6%8B%BC%E5%9B%A2%27&_sug_type_=&s_from=input&_sug_=n&type=2&page=6&ie=utf8>
+{'name': '亲子营', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502698207&ver=1&signature=Y2Uy-vUlxDqp*dyjDdWeHFuAs6UP2DLp7OtD9FM0*1AJuFl0UlTRX1NaIJ4ccwy1YbJkg2CBrK8AfZqvA7Vxfw=='}
+2017-08-14 16:10:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%27%E6%8B%BC%E5%9B%A2%27&_sug_type_=&s_from=input&_sug_=n&type=2&page=6&ie=utf8>
+{'name': '童书来了', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502698207&ver=1&signature=IDbWppQ*dzF*LQLc8boyU01XynE9C9a3mxi6aF9PcATunn6RULIsKQS*aOb*oZdAFJV4brHmqPr4Rc0TjHr6bg=='}
+2017-08-14 16:10:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%27%E6%8B%BC%E5%9B%A2%27&_sug_type_=&s_from=input&_sug_=n&type=2&page=6&ie=utf8>
+{'name': '耶稣基督教歌曲', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502698207&ver=1&signature=e*lnteX5Civd1ro-rj2H8AW25Mvr7ChjYzbOyVi*3X673ikQy-pxwFAGSS*f2KZvQleIdxo-huz7v*PPEtUdzQ=='}
+2017-08-14 16:10:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%27%E6%8B%BC%E5%9B%A2%27&_sug_type_=&s_from=input&_sug_=n&type=2&page=6&ie=utf8>
+{'name': '这里是美国', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502698207&ver=1&signature=KdpHlihAeiW3iKJFNxKGcfAjloHnLGYtsE*LV4olKCTnBtVpvMybdl-WigSjArRAPYQ1ekVUA7RDqBmd*kGAVQ=='}
+2017-08-14 16:10:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://weixin.sogou.com/weixin?query=%27%E6%8B%BC%E5%9B%A2%27&_sug_type_=&s_from=input&_sug_=n&type=2&page=7&ie=utf8> (referer: http://weixin.sogou.com/weixin?query=%27%E6%8B%BC%E5%9B%A2%27&_sug_type_=&s_from=input&_sug_=n&type=2&page=6&ie=utf8)
+2017-08-14 16:10:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%27%E6%8B%BC%E5%9B%A2%27&_sug_type_=&s_from=input&_sug_=n&type=2&page=7&ie=utf8>
+{'name': '科学家庭育儿', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502698214&ver=1&signature=oaBAi7ZGkKw9bheMJweOjxw9jFUBuTyIu6eLxkpjMmOjuXRlnNVtHoUSX*pDIhoKBBvnzwJO8NlD21UapLePiQ=='}
+2017-08-14 16:10:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%27%E6%8B%BC%E5%9B%A2%27&_sug_type_=&s_from=input&_sug_=n&type=2&page=7&ie=utf8>
+{'name': '童书共读', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502698214&ver=1&signature=Y*Qu1pRWU5i0tsaJRw-PPH9609gvN1B9KP82GErc7KDQyb6Pt*jq-NIt1nnCSDEDAF-J6m6WkeJQ1kqgaWyr8Q=='}
+2017-08-14 16:10:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%27%E6%8B%BC%E5%9B%A2%27&_sug_type_=&s_from=input&_sug_=n&type=2&page=7&ie=utf8>
+{'name': '童书来了', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502698214&ver=1&signature=IDbWppQ*dzF*LQLc8boyU01XynE9C9a3mxi6aF9PcATunn6RULIsKQS*aOb*oZdAiH0FhXa63WZ0oN-7XwhSFQ=='}
+2017-08-14 16:10:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%27%E6%8B%BC%E5%9B%A2%27&_sug_type_=&s_from=input&_sug_=n&type=2&page=7&ie=utf8>
+{'name': '通州小兵', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502698214&ver=1&signature=Rlnpelqc3DJs-d1MzwMbP3-IBjpPHyl3jOUhl*dJltMvwkiq5Id1nnvmYshPAa0WZJgQL1VVwSqXGYmhdXK2wg=='}
+2017-08-14 16:10:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%27%E6%8B%BC%E5%9B%A2%27&_sug_type_=&s_from=input&_sug_=n&type=2&page=7&ie=utf8>
+{'name': '耶稣', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502698214&ver=1&signature=wpyN-KNrGCVx6Npc3Nl-rVA9ED*ufmY1oTjyZUu9-rUiZ*u5M6YaydSTsUA5Cmlj1LKetFuWDuFAXL9CekXz0w=='}
+2017-08-14 16:10:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%27%E6%8B%BC%E5%9B%A2%27&_sug_type_=&s_from=input&_sug_=n&type=2&page=7&ie=utf8>
+{'name': '京东母婴', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502698214&ver=1&signature=zZWw3sEiUKipM63SEljt1dC-*DOU0jIrir4VBFxxbYZqlNdSY01*Ggm3smWenKby7ZHAC-6Ex3w5aEfOW-wkeQ=='}
+2017-08-14 16:10:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%27%E6%8B%BC%E5%9B%A2%27&_sug_type_=&s_from=input&_sug_=n&type=2&page=7&ie=utf8>
+{'name': '五台山佛学', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502698214&ver=1&signature=uTTe4TPrnPMfkZoWDitsbHaC1uuhzxSKj-yPIkRgzJ2m0vbtuizNTlZoPAJEPTbpLHKOFSkQZdrdykmHuaNjPA=='}
+2017-08-14 16:10:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%27%E6%8B%BC%E5%9B%A2%27&_sug_type_=&s_from=input&_sug_=n&type=2&page=7&ie=utf8>
+{'name': '号外邵阳', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502698214&ver=1&signature=c7a5fIMe02gnol49o0RYzQ2LGP1rYgk4XyJpV4QBwM02CFYZrhiRjYyxQZHRc7QwZckqO0bCzpZxyByJ-5frAw=='}
+2017-08-14 16:10:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%27%E6%8B%BC%E5%9B%A2%27&_sug_type_=&s_from=input&_sug_=n&type=2&page=7&ie=utf8>
+{'name': '苏州美食家', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502698214&ver=1&signature=wNNM1R17l6-KhO-*k5usL3PgvzQcI8XbzJtcrqJ02jyfN-adyusm0W7GfAzX1cIQMc6cDY3F5CselNy0tGqYYA=='}
+2017-08-14 16:10:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%27%E6%8B%BC%E5%9B%A2%27&_sug_type_=&s_from=input&_sug_=n&type=2&page=7&ie=utf8>
+{'name': '妈妈团', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502698214&ver=1&signature=TEDYWbGHpMLCQgXg0-u*Xy8mzN-wKRvPX7O5fJ1873XFUAkRUhPniRejxTnQy4txYDq8WRyvlAGvnhydObCHxg=='}
+2017-08-14 16:10:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://weixin.sogou.com/weixin?query=%27%E6%8B%BC%E5%9B%A2%27&_sug_type_=&s_from=input&_sug_=n&type=2&page=8&ie=utf8> (referer: http://weixin.sogou.com/weixin?query=%27%E6%8B%BC%E5%9B%A2%27&_sug_type_=&s_from=input&_sug_=n&type=2&page=7&ie=utf8)
+2017-08-14 16:10:34 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%27%E6%8B%BC%E5%9B%A2%27&_sug_type_=&s_from=input&_sug_=n&type=2&page=8&ie=utf8>
+{'name': '甜甜萌物语', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502698221&ver=1&signature=WKH2F8qUD-mnzN4*I5ciNNyFgZbW7eY2BKstKJ32yXRUlBVU6EXBopGagAW*NGjWVMxwBakGF1Msrw*scGbFJw=='}
+2017-08-14 16:10:34 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%27%E6%8B%BC%E5%9B%A2%27&_sug_type_=&s_from=input&_sug_=n&type=2&page=8&ie=utf8>
+{'name': '看常熟', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502698221&ver=1&signature=*4xE4KDCuWJDEv37nja6-VV2DzEY75wuZqakWAm-USEmwCI-rsWyIB7KwlRHbNtfnYHav4cgMI-EfBe*8xdCYw=='}
+2017-08-14 16:10:34 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%27%E6%8B%BC%E5%9B%A2%27&_sug_type_=&s_from=input&_sug_=n&type=2&page=8&ie=utf8>
+{'name': '基督教', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502698221&ver=1&signature=M7EycEGa3QfbkoTEqvVO5m73pbD6MiWdRwDUT7FKpeUnPIL1X8Vaj1wEsLqVAj9ZIiJ4FFtac8Rd0nCzJocpYg=='}
+2017-08-14 16:10:34 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%27%E6%8B%BC%E5%9B%A2%27&_sug_type_=&s_from=input&_sug_=n&type=2&page=8&ie=utf8>
+{'name': '家庭育儿堂', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502698221&ver=1&signature=rR1kNlIsvlFiKI5LOsrAE-mp5814pORy0Efr0Tf0IFw1JJjXq1DAE3NssGzYIVVeR0MKgSTOaV5g1mktwBNp4A=='}
+2017-08-14 16:10:34 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%27%E6%8B%BC%E5%9B%A2%27&_sug_type_=&s_from=input&_sug_=n&type=2&page=8&ie=utf8>
+{'name': '钱江晚报', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502698221&ver=1&signature=1V5yCqtfW7McECXmpgqbAG9DW3puKl3bJ--F6ilnxWdSO1GzvZwx0R8aF6xH5iC0VB-NUx39EJH0UnjQQ6DyYA=='}
+2017-08-14 16:10:34 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%27%E6%8B%BC%E5%9B%A2%27&_sug_type_=&s_from=input&_sug_=n&type=2&page=8&ie=utf8>
+{'name': '味姨', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502698221&ver=1&signature=OC*WmKyQmXcR7n292M4LEnoltG2j2tJz4UwR4W8e25R-wR9X94EzEnHLSPCkebTKaW5E9T3921wOYjk-erMv9A=='}
+2017-08-14 16:10:34 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%27%E6%8B%BC%E5%9B%A2%27&_sug_type_=&s_from=input&_sug_=n&type=2&page=8&ie=utf8>
+{'name': '无二之旅', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502698221&ver=1&signature=uVatDqq1GWe2PWmydA*f6KXoDRZcw5cLT6KZFZamE-0kaHsd6mXxFn0gS7Lbnx6uGcfPGS1HPDC4P5Fre5GfVA=='}
+2017-08-14 16:10:34 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%27%E6%8B%BC%E5%9B%A2%27&_sug_type_=&s_from=input&_sug_=n&type=2&page=8&ie=utf8>
+{'name': '今日香河', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502698221&ver=1&signature=-V24cyVfNkTmv7JkqB3xacKhUjHsfODNTzWjUmwNa-XYJn9CeAXSH39xal*286RCnEwc-LKx*X0qDlye6Wl3rA=='}
+2017-08-14 16:10:34 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%27%E6%8B%BC%E5%9B%A2%27&_sug_type_=&s_from=input&_sug_=n&type=2&page=8&ie=utf8>
+{'name': '家庭育儿堂', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502698221&ver=1&signature=rR1kNlIsvlFiKI5LOsrAE-mp5814pORy0Efr0Tf0IFw1JJjXq1DAE3NssGzYIVVeR0MKgSTOaV5g1mktwBNp4A=='}
+2017-08-14 16:10:34 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%27%E6%8B%BC%E5%9B%A2%27&_sug_type_=&s_from=input&_sug_=n&type=2&page=8&ie=utf8>
+{'name': '电商经理', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502698221&ver=1&signature=q*9oeaUWRWMfvj8VFNFxhHJJ*P3ZkTD4YMCynkfPm-xH7gLWMtCg**c8M2HbeoHFJRV2pYFfc0hjvE4AxO8Gvw=='}
+2017-08-14 16:10:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://weixin.sogou.com/weixin?query=%27%E6%8B%BC%E5%9B%A2%27&_sug_type_=&s_from=input&_sug_=n&type=2&page=9&ie=utf8> (referer: http://weixin.sogou.com/weixin?query=%27%E6%8B%BC%E5%9B%A2%27&_sug_type_=&s_from=input&_sug_=n&type=2&page=8&ie=utf8)
+2017-08-14 16:10:41 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%27%E6%8B%BC%E5%9B%A2%27&_sug_type_=&s_from=input&_sug_=n&type=2&page=9&ie=utf8>
+{'name': '小红唇', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502698228&ver=1&signature=FYZg40CCxgq-jelLVr6PiMB6G2a3hUyZWCfiIJ2tRacNeFq*yz7UkYhEqgLZrHna8t2oChWCH1LgTlLWgsegeQ=='}
+2017-08-14 16:10:41 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%27%E6%8B%BC%E5%9B%A2%27&_sug_type_=&s_from=input&_sug_=n&type=2&page=9&ie=utf8>
+{'name': '妈妈儿童营养餐', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502698228&ver=1&signature=cTWCG2DRpZ-SuGBsMPtnz0XKxsIL-X7VfwFkcTunzRDjfQtq7gEeNls8e2aWshw15yYMdc5yTGXGjjBeIMLUnw=='}
+2017-08-14 16:10:41 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%27%E6%8B%BC%E5%9B%A2%27&_sug_type_=&s_from=input&_sug_=n&type=2&page=9&ie=utf8>
+{'name': '童书共读', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502698228&ver=1&signature=Y*Qu1pRWU5i0tsaJRw-PPH9609gvN1B9KP82GErc7KDQyb6Pt*jq-NIt1nnCSDEDCnK5Yz6BhyQ9qdt9kp9gWw=='}
+2017-08-14 16:10:41 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%27%E6%8B%BC%E5%9B%A2%27&_sug_type_=&s_from=input&_sug_=n&type=2&page=9&ie=utf8>
+{'name': '天津欢乐水魔方', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502698228&ver=1&signature=XzVbdTRZzPvu3WVtaIK826wsAaBt8E96s0oEtWFVgl581mkqi2NYpJG0QbYuHlf67kJ5FqgharYtQB6IdUTcaQ=='}
+2017-08-14 16:10:41 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%27%E6%8B%BC%E5%9B%A2%27&_sug_type_=&s_from=input&_sug_=n&type=2&page=9&ie=utf8>
+{'name': '合阳微生活', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502698228&ver=1&signature=THkBfGFg0YRKctyU6ElHJMg0QSpELoDmI8tglfk91ZocaZiFD9kSlX3znvueDg5z-cRk6c5ljvDc2copPEOYOw=='}
+2017-08-14 16:10:41 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%27%E6%8B%BC%E5%9B%A2%27&_sug_type_=&s_from=input&_sug_=n&type=2&page=9&ie=utf8>
+{'name': '北京水魔方', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502698228&ver=1&signature=JihqGzFXDoyTD*WMefEvbzkGqbM93vvlWhejSlZO901YrdpK*jw0wf8Z-68qVfGExoFeFuAMLDblcKpCGNlo0A=='}
+2017-08-14 16:10:41 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%27%E6%8B%BC%E5%9B%A2%27&_sug_type_=&s_from=input&_sug_=n&type=2&page=9&ie=utf8>
+{'name': '孕事', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502698228&ver=1&signature=mHAcNL8COr8bsCboOxCmCZ*CfMCdtdha3GJ6KvA4Wezs275mDpbtc2OL63EOpxMsNMxy8geC3nl9T*Cw5hk28Q=='}
+2017-08-14 16:10:41 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%27%E6%8B%BC%E5%9B%A2%27&_sug_type_=&s_from=input&_sug_=n&type=2&page=9&ie=utf8>
+{'name': '聚爱财', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502698228&ver=1&signature=FV7jtyHpHb3icHcMF3sCX2FcI-Ps9SvJQ9ZtAplCoXS0278SZeZHV8rV6WAllPAnIYr*9am*FhBf3Z9jsHMI8Q=='}
+2017-08-14 16:10:41 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%27%E6%8B%BC%E5%9B%A2%27&_sug_type_=&s_from=input&_sug_=n&type=2&page=9&ie=utf8>
+{'name': '长沙亲子营', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502698228&ver=1&signature=sG2WwuF3EADZ7Q4mn2g-1fjBMg8ImF*m3Kde-o2yli3gkdt9Ws7Mi5c1DpuRQoMllYm3eNPb4eLWmLJdKvX7ZA=='}
+2017-08-14 16:10:41 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%27%E6%8B%BC%E5%9B%A2%27&_sug_type_=&s_from=input&_sug_=n&type=2&page=9&ie=utf8>
+{'name': '七茶文化', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502698228&ver=1&signature=9-DeBd0pL8Dx7jwaKDBxaTOAK07XHOBbGSzSgeJ8ppsXiRhLigMJMjzzehwM4-6vVXnxqKNdpvGdkblm862PeA=='}
+2017-08-14 16:10:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://weixin.sogou.com/weixin?query=%27%E6%8B%BC%E5%9B%A2%27&_sug_type_=&s_from=input&_sug_=n&type=2&page=10&ie=utf8> (referer: http://weixin.sogou.com/weixin?query=%27%E6%8B%BC%E5%9B%A2%27&_sug_type_=&s_from=input&_sug_=n&type=2&page=9&ie=utf8)
+2017-08-14 16:10:47 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%27%E6%8B%BC%E5%9B%A2%27&_sug_type_=&s_from=input&_sug_=n&type=2&page=10&ie=utf8>
+{'name': '玩转手机摄影', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502698234&ver=1&signature=VCgksMpQJmfQ92FhQ-izoSCahbsgiifzQWMvjl8tOAhNNQlsokwpP1sWANRm7SAIsKUl7Ogrqtq3XuoNg-NwfA=='}
+2017-08-14 16:10:47 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%27%E6%8B%BC%E5%9B%A2%27&_sug_type_=&s_from=input&_sug_=n&type=2&page=10&ie=utf8>
+{'name': '英华兰DrBing', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502698234&ver=1&signature=-G7fLscq1XIsNK7ydsoz4l3hm2Xmcazv8HqhUEq8tPXYxjhqXpeRXipJpQxRA8efVlRaV1GmJYpS7lBieHPlWQ=='}
+2017-08-14 16:10:47 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%27%E6%8B%BC%E5%9B%A2%27&_sug_type_=&s_from=input&_sug_=n&type=2&page=10&ie=utf8>
+{'name': '时尚旅游', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502698234&ver=1&signature=43AwXluL86EhNGvt0lsTW7TpeL0j-xzjQCFVmaJ*HLmsltS9zmiIrmCgZwdcz0TdaOZSKCoAxlCBMXXLiUErYA=='}
+2017-08-14 16:10:47 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%27%E6%8B%BC%E5%9B%A2%27&_sug_type_=&s_from=input&_sug_=n&type=2&page=10&ie=utf8>
+{'name': '生鲜传奇', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502698234&ver=1&signature=7J9M9FrT3FE39KWkA-OPck4fFvaZ6FWrjdGCvVWFgRw0f8KNDKu*BO1Pq51J9hFq46IAotOtBdVD34EXctR2aw=='}
+2017-08-14 16:10:47 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%27%E6%8B%BC%E5%9B%A2%27&_sug_type_=&s_from=input&_sug_=n&type=2&page=10&ie=utf8>
+{'name': '李树鹏讲公务员考试', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502698234&ver=1&signature=RUTqnSd23bORtEQ8NqbPQvIkj1CefZDGJtjTIvJbGvblKmYLlRVbTT4sOZBZasu-9sPWd*pejgrF0VbsTCry9A=='}
+2017-08-14 16:10:47 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%27%E6%8B%BC%E5%9B%A2%27&_sug_type_=&s_from=input&_sug_=n&type=2&page=10&ie=utf8>
+{'name': '京东母婴', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502698234&ver=1&signature=zZWw3sEiUKipM63SEljt1dC-*DOU0jIrir4VBFxxbYZqlNdSY01*Ggm3smWenKbyGitDDgh2b1H*KCuntJ3jYA=='}
+2017-08-14 16:10:47 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%27%E6%8B%BC%E5%9B%A2%27&_sug_type_=&s_from=input&_sug_=n&type=2&page=10&ie=utf8>
+{'name': '小薇优选', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502698234&ver=1&signature=wN3uRdA75PpSB*kIksjsAuVBqxBaXMJrlZsF8H6VlE83JrasJWyizTcYJgoJnGN1ehUcB8C14wq7suZsqCfxfg=='}
+2017-08-14 16:10:47 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%27%E6%8B%BC%E5%9B%A2%27&_sug_type_=&s_from=input&_sug_=n&type=2&page=10&ie=utf8>
+{'name': '色彩化妆品', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502698234&ver=1&signature=rW1zwg-F2UpnYoRRZogWCTKJaKh6nWy3u42jdeXkATWWSouHMfFWRm0cFuDGwXJs6r2CQvDtLBCIFzvUO3WRtw=='}
+2017-08-14 16:10:47 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%27%E6%8B%BC%E5%9B%A2%27&_sug_type_=&s_from=input&_sug_=n&type=2&page=10&ie=utf8>
+{'name': '宜兴零距离网', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502698234&ver=1&signature=slsCOxKlhq5ONFfICWB5GReJ6cqr0u*CWaKxtzpcHfkFbzfnD9LLPH7EUIgNFFdAfJkvb-PMtQxm9ciTOdQ7uw=='}
+2017-08-14 16:10:47 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%27%E6%8B%BC%E5%9B%A2%27&_sug_type_=&s_from=input&_sug_=n&type=2&page=10&ie=utf8>
+{'name': 'OFashion迷橙', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502698234&ver=1&signature=M6FIE0iLAXqprdAXQQtnhV8FgH-LVqE3UqQqcMA2KQRr53rVTvv8JGpJxf4A2B1D4BbGkOcuLiadtBaHJ5YFiQ=='}
+2017-08-14 16:10:47 [scrapy.core.scraper] ERROR: Spider error processing <GET http://weixin.sogou.com/weixin?query=%27%E6%8B%BC%E5%9B%A2%27&_sug_type_=&s_from=input&_sug_=n&type=2&page=10&ie=utf8> (referer: http://weixin.sogou.com/weixin?query=%27%E6%8B%BC%E5%9B%A2%27&_sug_type_=&s_from=input&_sug_=n&type=2&page=9&ie=utf8)
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Backup\Projects\GoldPillow\GoldPillow\spiders\account_spider.py", line 30, in parse
+    yield scrapy.Request(next_page, callback=self.parse)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\http\request\__init__.py", line 25, in __init__
+    self._set_url(url)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\http\request\__init__.py", line 52, in _set_url
+    raise TypeError('Request url must be str or unicode, got %s:' % type(url).__name__)
+TypeError: Request url must be str or unicode, got NoneType:
+2017-08-14 16:10:47 [scrapy.core.engine] INFO: Closing spider (finished)
+2017-08-14 16:10:47 [scrapy.extensions.feedexport] INFO: Stored csv feed (100 items) in: pin-tuan.csv
+2017-08-14 16:10:47 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 6169,
+ 'downloader/request_count': 10,
+ 'downloader/request_method_count/GET': 10,
+ 'downloader/response_bytes': 131687,
+ 'downloader/response_count': 10,
+ 'downloader/response_status_count/200': 10,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2017, 8, 14, 8, 10, 47, 264202),
+ 'item_scraped_count': 100,
+ 'log_count/DEBUG': 111,
+ 'log_count/ERROR': 1,
+ 'log_count/INFO': 8,
+ 'request_depth_max': 9,
+ 'response_received_count': 10,
+ 'scheduler/dequeued': 10,
+ 'scheduler/dequeued/memory': 10,
+ 'scheduler/enqueued': 10,
+ 'scheduler/enqueued/memory': 10,
+ 'spider_exceptions/TypeError': 1,
+ 'start_time': datetime.datetime(2017, 8, 14, 8, 9, 48, 436130)}
+2017-08-14 16:10:47 [scrapy.core.engine] INFO: Spider closed (finished)
+2017-08-14 16:17:28 [scrapy.utils.log] INFO: Scrapy 1.4.0 started (bot: GoldPillow)
+2017-08-14 16:17:28 [scrapy.utils.log] INFO: Overridden settings: {'BOT_NAME': 'GoldPillow', 'DOWNLOAD_DELAY': 5, 'LOG_ENABLED': False, 'LOG_FILE': 'log.txt', 'NEWSPIDER_MODULE': 'GoldPillow.spiders', 'SPIDER_MODULES': ['GoldPillow.spiders'], 'USER_AGENT': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_3) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.54 Safari/536.5'}
