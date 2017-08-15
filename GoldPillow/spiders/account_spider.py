@@ -11,7 +11,7 @@ class AccountSpider(scrapy.Spider):
     # ]
 
     def start_requests(self):
-        keyword = getattr(self, 'tag', None)
+        keyword = getattr(self, 'tag', 'None')
         keyword_url = parse.quote(keyword)
         if keyword_url is not None:
             url = ('http://weixin.sogou.com/weixin?query=%s&_sug_type_=&s_from=input&_sug_=n&type=2&ie=utf8&page=1' % keyword_url)

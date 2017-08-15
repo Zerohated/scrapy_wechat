@@ -1,16 +1,18 @@
 import scrapy
 from urllib import parse
+import json
 
 
 class DetailSpider(scrapy.Spider):
     name = "detail"
 
     def start_requests(self):
-        with open('distinct-accounts.csv', 'r', encoding='utf-8', newline='') as da:
+        with open('distinct-accounts.csv', 'r', encoding='utf-8', newline='\n') as da:
             content = da.readlines()
+            url_list = []
             for row in content:
-                row = row.split(',')
-                yield scrapy.Request(row[1], callback=self.parse)
+                temp_dic = json.loads(row)
+                yield scrapy.Request(temp_dic['url'], callback=self.parse)
 
     def parse(self, response):
         yield {
