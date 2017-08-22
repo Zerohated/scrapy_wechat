@@ -19,6 +19,7 @@ class AccountSpider(scrapy.Spider):
 
     def parse(self, response):
         for account in response.xpath('//ul[@class="news-list"]/li/div/div/a[@class="account"]'):
+            print('name: %s' % account.xpath('text()').extract_first())
             yield {
                 'name': account.xpath('text()').extract_first(),
                 'url': account.xpath('@href').extract_first(),
@@ -26,4 +27,4 @@ class AccountSpider(scrapy.Spider):
         next_page = response.xpath('//a[@id="sogou_next"]/@href').extract_first()
         if next_page is not None:
             next_page = response.urljoin(next_page)
-        yield scrapy.Request(next_page, callback=self.parse)
+            yield scrapy.Request(next_page, callback=self.parse)

@@ -1,0 +1,377 @@
+2017-08-17 16:31:31 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats']
+2017-08-17 16:31:31 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'GoldPillow.middlewares.RandomUserAgentMiddleware',
+ 'GoldPillow.middlewares.ProxyMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2017-08-17 16:31:31 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2017-08-17 16:31:31 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2017-08-17 16:31:31 [scrapy.core.engine] INFO: Spider opened
+2017-08-17 16:31:31 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-08-17 16:31:31 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6024
+2017-08-17 16:31:31 [account] DEBUG: User-Agent: b'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_3) AppleWebKit/534.55.3 (KHTML, like Gecko) Version/5.1.3 Safari/534.53.10' <GET http://weixin.sogou.com/weixin?query=%E9%99%90%E8%B4%AD&_sug_type_=&s_from=input&_sug_=n&type=2&ie=utf8&page=1>
+2017-08-17 16:31:32 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET http://weixin.sogou.com/weixin?query=%E9%99%90%E8%B4%AD&_sug_type_=&s_from=input&_sug_=n&type=2&ie=utf8&page=1> (failed 1 times): Connection was refused by other side: 10061: 由于目标计算机积极拒绝，无法连接。.
+2017-08-17 16:31:32 [account] DEBUG: User-Agent: b'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_3) AppleWebKit/534.55.3 (KHTML, like Gecko) Version/5.1.3 Safari/534.53.10' <GET http://weixin.sogou.com/weixin?query=%E9%99%90%E8%B4%AD&_sug_type_=&s_from=input&_sug_=n&type=2&ie=utf8&page=1>
+2017-08-17 16:31:35 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET http://weixin.sogou.com/weixin?query=%E9%99%90%E8%B4%AD&_sug_type_=&s_from=input&_sug_=n&type=2&ie=utf8&page=1> (failed 2 times): Connection was refused by other side: 10061: 由于目标计算机积极拒绝，无法连接。.
+2017-08-17 16:31:35 [account] DEBUG: User-Agent: b'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_3) AppleWebKit/534.55.3 (KHTML, like Gecko) Version/5.1.3 Safari/534.53.10' <GET http://weixin.sogou.com/weixin?query=%E9%99%90%E8%B4%AD&_sug_type_=&s_from=input&_sug_=n&type=2&ie=utf8&page=1>
+2017-08-17 16:31:38 [scrapy.downloadermiddlewares.retry] DEBUG: Gave up retrying <GET http://weixin.sogou.com/weixin?query=%E9%99%90%E8%B4%AD&_sug_type_=&s_from=input&_sug_=n&type=2&ie=utf8&page=1> (failed 3 times): Connection was refused by other side: 10061: 由于目标计算机积极拒绝，无法连接。.
+2017-08-17 16:31:38 [scrapy.core.scraper] ERROR: Error downloading <GET http://weixin.sogou.com/weixin?query=%E9%99%90%E8%B4%AD&_sug_type_=&s_from=input&_sug_=n&type=2&ie=utf8&page=1>
+Traceback (most recent call last):
+  File "C:\Program Files\Python36\lib\site-packages\twisted\internet\defer.py", line 1384, in _inlineCallbacks
+    result = result.throwExceptionIntoGenerator(g)
+  File "C:\Program Files\Python36\lib\site-packages\twisted\python\failure.py", line 393, in throwExceptionIntoGenerator
+    return g.throw(self.type, self.value, self.tb)
+  File "C:\Program Files\Python36\lib\site-packages\scrapy\core\downloader\middleware.py", line 43, in process_request
+    defer.returnValue((yield download_func(request=request,spider=spider)))
+twisted.internet.error.ConnectionRefusedError: Connection was refused by other side: 10061: 由于目标计算机积极拒绝，无法连接。.
+2017-08-17 16:31:38 [scrapy.core.engine] INFO: Closing spider (finished)
+2017-08-17 16:31:38 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/exception_count': 3,
+ 'downloader/exception_type_count/twisted.internet.error.ConnectionRefusedError': 3,
+ 'downloader/request_bytes': 1155,
+ 'downloader/request_count': 3,
+ 'downloader/request_method_count/GET': 3,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2017, 8, 17, 8, 31, 38, 460062),
+ 'log_count/DEBUG': 7,
+ 'log_count/ERROR': 1,
+ 'log_count/INFO': 7,
+ 'retry/count': 2,
+ 'retry/max_reached': 1,
+ 'retry/reason_count/twisted.internet.error.ConnectionRefusedError': 2,
+ 'scheduler/dequeued': 3,
+ 'scheduler/dequeued/memory': 3,
+ 'scheduler/enqueued': 3,
+ 'scheduler/enqueued/memory': 3,
+ 'start_time': datetime.datetime(2017, 8, 17, 8, 31, 31, 247930)}
+2017-08-17 16:31:38 [scrapy.core.engine] INFO: Spider closed (finished)
+2017-08-17 16:34:01 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats']
+2017-08-17 16:34:01 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'GoldPillow.middlewares.RandomUserAgentMiddleware',
+ 'GoldPillow.middlewares.ProxyMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2017-08-17 16:34:01 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2017-08-17 16:34:01 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2017-08-17 16:34:01 [scrapy.core.engine] INFO: Spider opened
+2017-08-17 16:34:01 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-08-17 16:34:01 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6024
+2017-08-17 16:34:01 [account] DEBUG: User-Agent: b'Mozilla/5.0 (Windows NT 6.2; Win64; x64; rv:16.0) Gecko/16.0 Firefox/16.0' <GET http://weixin.sogou.com/weixin?query=%E9%99%90%E8%B4%AD&_sug_type_=&s_from=input&_sug_=n&type=2&ie=utf8&page=1>
+2017-08-17 16:34:02 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://weixin.sogou.com/antispider/?from=%2fweixin%3Fquery%3d%E9%99%90%E8%B4%AD%26_sug_type_%3d%26s_from%3dinput%26_sug_%3dn%26type%3d2%26ie%3dutf8%26page%3d1> from <GET http://weixin.sogou.com/weixin?query=%E9%99%90%E8%B4%AD&_sug_type_=&s_from=input&_sug_=n&type=2&ie=utf8&page=1>
+2017-08-17 16:34:02 [account] DEBUG: User-Agent: b'Mozilla/5.0 (Windows NT 6.2; Win64; x64; rv:16.0) Gecko/16.0 Firefox/16.0' <GET http://weixin.sogou.com/antispider/?from=%2fweixin%3Fquery%3d%E9%99%90%E8%B4%AD%26_sug_type_%3d%26s_from%3dinput%26_sug_%3dn%26type%3d2%26ie%3dutf8%26page%3d1>
+2017-08-17 16:34:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://weixin.sogou.com/antispider/?from=%2fweixin%3Fquery%3d%E9%99%90%E8%B4%AD%26_sug_type_%3d%26s_from%3dinput%26_sug_%3dn%26type%3d2%26ie%3dutf8%26page%3d1> (referer: None)
+2017-08-17 16:34:05 [scrapy.core.engine] INFO: Closing spider (finished)
+2017-08-17 16:34:05 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 760,
+ 'downloader/request_count': 2,
+ 'downloader/request_method_count/GET': 2,
+ 'downloader/response_bytes': 3519,
+ 'downloader/response_count': 2,
+ 'downloader/response_status_count/200': 1,
+ 'downloader/response_status_count/302': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2017, 8, 17, 8, 34, 5, 816330),
+ 'log_count/DEBUG': 5,
+ 'log_count/INFO': 7,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 2,
+ 'scheduler/dequeued/memory': 2,
+ 'scheduler/enqueued': 2,
+ 'scheduler/enqueued/memory': 2,
+ 'start_time': datetime.datetime(2017, 8, 17, 8, 34, 1, 972938)}
+2017-08-17 16:34:05 [scrapy.core.engine] INFO: Spider closed (finished)
+2017-08-17 16:37:06 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats']
+2017-08-17 16:37:06 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2017-08-17 16:37:06 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2017-08-17 16:37:06 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2017-08-17 16:37:06 [scrapy.core.engine] INFO: Spider opened
+2017-08-17 16:37:06 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-08-17 16:37:06 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6024
+2017-08-17 16:37:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://weixin.sogou.com/weixin?query=%E9%99%90%E8%B4%AD&_sug_type_=&s_from=input&_sug_=n&type=2&ie=utf8&page=1> (referer: None)
+2017-08-17 16:37:06 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%E9%99%90%E8%B4%AD&_sug_type_=&s_from=input&_sug_=n&type=2&ie=utf8&page=1>
+{'name': '广州笋嘢益街坊', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502959013&ver=1&signature=FqwAVbmRYD038xZAZIiRNrkCaols7z-x5nrS1C97H6AiszD8rCW9DC4ums*jBuQsSE8gKfRWX6uyeSSfPGpDyA=='}
+2017-08-17 16:37:06 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%E9%99%90%E8%B4%AD&_sug_type_=&s_from=input&_sug_=n&type=2&ie=utf8&page=1>
+{'name': '中山乐居', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502959013&ver=1&signature=DE0-odgv89GoZjIRJMauOrG-RjCQGnsuLXaVA*2xtdlu1I7rLpJRdnP-*3vfCmTCb1wNYGnfYBq8mfLFrutOpg=='}
+2017-08-17 16:37:06 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%E9%99%90%E8%B4%AD&_sug_type_=&s_from=input&_sug_=n&type=2&ie=utf8&page=1>
+{'name': '华人地产网', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502959013&ver=1&signature=WnXwJyG*lqPN1enaBnrcJ-xDpYgqohglOZl8jL9IbimvNS7yNr8yPNksqWjYlDKnzckT5bp44ef-mz2ntYMSuA=='}
+2017-08-17 16:37:06 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%E9%99%90%E8%B4%AD&_sug_type_=&s_from=input&_sug_=n&type=2&ie=utf8&page=1>
+{'name': '家在宁波网', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502959013&ver=1&signature=eiL-uNJ-lJNZBYhUzRcralSjY3rfO9H-agRc-d1wHZ0ijrvBK48Ah4qgb6FBg8JcHANBD4184a1YosvKG6felA=='}
+2017-08-17 16:37:06 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%E9%99%90%E8%B4%AD&_sug_type_=&s_from=input&_sug_=n&type=2&ie=utf8&page=1>
+{'name': '湖北之声', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502959013&ver=1&signature=AZyDdRb3Rb5Bvk8B81y3CFiyVCwAV*oeuM*Ld71d2CKOHlisIvaK7zurPbFDsTxB7x-9BYBKOPXuWcwBnAfHRA=='}
+2017-08-17 16:37:06 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%E9%99%90%E8%B4%AD&_sug_type_=&s_from=input&_sug_=n&type=2&ie=utf8&page=1>
+{'name': '苏州买房团', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502959013&ver=1&signature=moVA9TUnS*VpRlNW1XeW2eHso9K5SOLZGx*4t6c7DZqV4vasmEv*K1fn-xBY5aEYjSda*HrZPcr2WxUl9tkr*A=='}
+2017-08-17 16:37:06 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%E9%99%90%E8%B4%AD&_sug_type_=&s_from=input&_sug_=n&type=2&ie=utf8&page=1>
+{'name': '晓东汇', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502959013&ver=1&signature=iIOIleFaHqO4ck0X9qA2tv6IyCNNspChPM1PFXc8pp6ni3Zp37eVQgNsSSzlLMplbYHLdSNfFk1I-8doVZpztg=='}
+2017-08-17 16:37:06 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%E9%99%90%E8%B4%AD&_sug_type_=&s_from=input&_sug_=n&type=2&ie=utf8&page=1>
+{'name': '钱塘会', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502959013&ver=1&signature=IceHppSXdzB0S0n12YhW0aXa1hymeoMp7BCD4P*Z2Mr0YKTaCfbAcsFDgoh-RM8KOp1V67Hm*SIXLESEffgGHA=='}
+2017-08-17 16:37:06 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%E9%99%90%E8%B4%AD&_sug_type_=&s_from=input&_sug_=n&type=2&ie=utf8&page=1>
+{'name': '住在九江', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502959013&ver=1&signature=FuOMQFpjD2jmpr0*BgnFsM4i3zQ67owWtDWWUK4oreqxMSaZU7Vt*V6cYOH-XV66RN47McVhvMY1V-pbByc1sQ=='}
+2017-08-17 16:37:06 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%E9%99%90%E8%B4%AD&_sug_type_=&s_from=input&_sug_=n&type=2&ie=utf8&page=1>
+{'name': '大朗长富实惠店', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502959013&ver=1&signature=v83NZKTiiZSpRnri8lWpwMEwTRkgZLgibYGBvR2jBi*lgnXMSNdGfvr9h9w9A0WFyKUdd-Yd*crKcvZ7Yg9VKw=='}
+2017-08-17 16:37:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://weixin.sogou.com/weixin?query=%E9%99%90%E8%B4%AD&_sug_type_=&s_from=input&_sug_=n&type=2&page=2&ie=utf8> (referer: http://weixin.sogou.com/weixin?query=%E9%99%90%E8%B4%AD&_sug_type_=&s_from=input&_sug_=n&type=2&ie=utf8&page=1)
+2017-08-17 16:37:08 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%E9%99%90%E8%B4%AD&_sug_type_=&s_from=input&_sug_=n&type=2&page=2&ie=utf8>
+{'name': '因扎吉FIFA', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502959015&ver=1&signature=7brJwz5s53fssoqfeKVFhqiFfPmyKkiNj*0E1nMQ3FGcZJb9eNy8zb6kGjCrWkSEoV8bhaj*OHpNAGRD3cK20Q=='}
+2017-08-17 16:37:08 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%E9%99%90%E8%B4%AD&_sug_type_=&s_from=input&_sug_=n&type=2&page=2&ie=utf8>
+{'name': '吴晓波频道', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502959015&ver=1&signature=PxhdPaM3APRyEasXSrE1S20pHx8vrKBJq9CrjxF1qvewC*APa93LzUepbnMFaf1u2cNG8-Yms1XuQlYa3VM28A=='}
+2017-08-17 16:37:08 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%E9%99%90%E8%B4%AD&_sug_type_=&s_from=input&_sug_=n&type=2&page=2&ie=utf8>
+{'name': '齐鲁晚报', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502959015&ver=1&signature=R2G0B3hLjoUbMKX7RMJQxPKG8B0jXrdQa4ZDqngkOh0ZS5MO1OOSKy7vDMz5vtZwBqGNeTr1j5LMQCg1k6xtWQ=='}
+2017-08-17 16:37:08 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%E9%99%90%E8%B4%AD&_sug_type_=&s_from=input&_sug_=n&type=2&page=2&ie=utf8>
+{'name': '广州印象', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502959015&ver=1&signature=Aaw9jkn3vvVaVBM0nvMjkY*BQTUAzp6plWlTur-XpprxhcHmXmdwvrR2nWmk-ZOZtKnIXsCpDHijGi59Raz*9A=='}
+2017-08-17 16:37:08 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%E9%99%90%E8%B4%AD&_sug_type_=&s_from=input&_sug_=n&type=2&page=2&ie=utf8>
+{'name': '中原网', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502959015&ver=1&signature=zzqIlb*sIM0veFRf5T77jIyxBTxnnAPE-JuqA3foxbHYEDrf9I7q7qhvpEwRyjY6Kz0YTEH7DEGtmcDT9CKXgA=='}
+2017-08-17 16:37:08 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%E9%99%90%E8%B4%AD&_sug_type_=&s_from=input&_sug_=n&type=2&page=2&ie=utf8>
+{'name': '保视界', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502959015&ver=1&signature=MZBEuncuXEk9VlrRUMnun3fbRrsxRKqvGsnRsyzgH1i48hZyX148b2JclnU1CwW7pdPkPIxfVMQQWP9Epth3Gw=='}
+2017-08-17 16:37:08 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%E9%99%90%E8%B4%AD&_sug_type_=&s_from=input&_sug_=n&type=2&page=2&ie=utf8>
+{'name': '腾讯财经', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502959015&ver=1&signature=*aEZblzhQowzNlyx-K0aYwsCRLP6aqjTcSl7yS6vD8OSfSBbpASD3FPfeROVKTGIoevohf3tZ5FH5YXTLODaIw=='}
+2017-08-17 16:37:08 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%E9%99%90%E8%B4%AD&_sug_type_=&s_from=input&_sug_=n&type=2&page=2&ie=utf8>
+{'name': '因扎吉FIFA', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502959015&ver=1&signature=7brJwz5s53fssoqfeKVFhqiFfPmyKkiNj*0E1nMQ3FGcZJb9eNy8zb6kGjCrWkSEoV8bhaj*OHpNAGRD3cK20Q=='}
+2017-08-17 16:37:08 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%E9%99%90%E8%B4%AD&_sug_type_=&s_from=input&_sug_=n&type=2&page=2&ie=utf8>
+{'name': '21世纪经济报道', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502959015&ver=1&signature=zgr9U5DDCyKiwgPrzOyx6wOkDesHg66rczrI50dc63n5N-KtpGxUPUOzrtjhwwzAeVRg8wyruisZoXCJn7wJ9A=='}
+2017-08-17 16:37:08 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%E9%99%90%E8%B4%AD&_sug_type_=&s_from=input&_sug_=n&type=2&page=2&ie=utf8>
+{'name': '成都房帮帮', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502959015&ver=1&signature=ZEI87yfYPpqcDyYXqSYXxuJAvcXPCA2GAXX5jKFvX84fPc0i6ZsjiRsv-K0ZmxIrrZimwx*kDQzgCOiXLzmXBg=='}
+2017-08-17 16:37:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://weixin.sogou.com/weixin?query=%E9%99%90%E8%B4%AD&_sug_type_=&s_from=input&_sug_=n&type=2&page=3&ie=utf8> (referer: http://weixin.sogou.com/weixin?query=%E9%99%90%E8%B4%AD&_sug_type_=&s_from=input&_sug_=n&type=2&page=2&ie=utf8)
+2017-08-17 16:37:10 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%E9%99%90%E8%B4%AD&_sug_type_=&s_from=input&_sug_=n&type=2&page=3&ie=utf8>
+{'name': 'FIFAOnline3', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502959017&ver=1&signature=fjACLosF-8L9poEQaiwyfakb-NtzLPOcAOF*Uw50rSJCuZnGYB0KctK0v6-6xc-YzfjBbAJXr6cjstogxgu6RQ=='}
+2017-08-17 16:37:10 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%E9%99%90%E8%B4%AD&_sug_type_=&s_from=input&_sug_=n&type=2&page=3&ie=utf8>
+{'name': '中国经济网', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502959017&ver=1&signature=aXO5WqSr04wwD4WFBwFJzUSIKyMsvPGHg20-yTl5xduMzecgPUVe5hffD8c8tMr1MfQNhsHJpO8PUA0dDMGZDA=='}
+2017-08-17 16:37:10 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%E9%99%90%E8%B4%AD&_sug_type_=&s_from=input&_sug_=n&type=2&page=3&ie=utf8>
+{'name': '易居中国', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502959017&ver=1&signature=qtPlnhOR5A2fmsoVTdSuTZBZedwI5hLhHT8LxiQ05tynU9F6ASkWxE6CUtKGKejuQa7QfBD9l2E3LwobX3T2xw=='}
+2017-08-17 16:37:10 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%E9%99%90%E8%B4%AD&_sug_type_=&s_from=input&_sug_=n&type=2&page=3&ie=utf8>
+{'name': '因扎吉FIFA', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502959017&ver=1&signature=7brJwz5s53fssoqfeKVFhqiFfPmyKkiNj*0E1nMQ3FGcZJb9eNy8zb6kGjCrWkSEiQFtzKZQ3UHpnSXJnf6g3Q=='}
+2017-08-17 16:37:10 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%E9%99%90%E8%B4%AD&_sug_type_=&s_from=input&_sug_=n&type=2&page=3&ie=utf8>
+{'name': '新赣州房产网', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502959017&ver=1&signature=skOmZUxAlc1Z2yQf2oCrRjjLVy-*wZBnTPx6AJK*ocRBDMOhbQpzw5FzNOcYS6QwEwA1zlhPuiKWxOJqZ3XJTg=='}
+2017-08-17 16:37:10 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%E9%99%90%E8%B4%AD&_sug_type_=&s_from=input&_sug_=n&type=2&page=3&ie=utf8>
+{'name': '车务通', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502959017&ver=1&signature=YxFLNjrEdPmyTUseEV7jGgXMWs7xcxDL5eFyobadMjUlTTUizrykJPMy0m35rUFCQ5Efj6k72lfdd8E0uxz7AQ=='}
+2017-08-17 16:37:10 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%E9%99%90%E8%B4%AD&_sug_type_=&s_from=input&_sug_=n&type=2&page=3&ie=utf8>
+{'name': '河北日报', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502959017&ver=1&signature=u7wxL8nGnIbu8OAeVG5mPJW3ksrn8m6mWqXbLUKJPBW-i-Lc5ym4fkRCl9B2JZTOBE9PGyOG5kJecQjBmOGmOg=='}
+2017-08-17 16:37:10 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%E9%99%90%E8%B4%AD&_sug_type_=&s_from=input&_sug_=n&type=2&page=3&ie=utf8>
+{'name': '智谷趋势', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502959017&ver=1&signature=6VpOPBFbrrWbeucjWqFd1HOdL3SdSBViXoR5wqy2LLnU7nYHKacZ3Xpswe6tsdQELt6nFjv5fsEj1iffd0IrIQ=='}
+2017-08-17 16:37:10 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%E9%99%90%E8%B4%AD&_sug_type_=&s_from=input&_sug_=n&type=2&page=3&ie=utf8>
+{'name': '姑苏网', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502959017&ver=1&signature=5gF0w93TU7gvkL3pCarMbyycolvhTpodWEdWKreYc7qzYGzq39MIrgauMgD4nobweuEYRxmUXxRr6pR-bVLvWA=='}
+2017-08-17 16:37:10 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%E9%99%90%E8%B4%AD&_sug_type_=&s_from=input&_sug_=n&type=2&page=3&ie=utf8>
+{'name': '吴晓波频道', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502959017&ver=1&signature=PxhdPaM3APRyEasXSrE1S20pHx8vrKBJq9CrjxF1qvewC*APa93LzUepbnMFaf1uRMASkFKosHIsSCem6AuVbw=='}
+2017-08-17 16:37:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://weixin.sogou.com/weixin?query=%E9%99%90%E8%B4%AD&_sug_type_=&s_from=input&_sug_=n&type=2&page=4&ie=utf8> (referer: http://weixin.sogou.com/weixin?query=%E9%99%90%E8%B4%AD&_sug_type_=&s_from=input&_sug_=n&type=2&page=3&ie=utf8)
+2017-08-17 16:37:12 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%E9%99%90%E8%B4%AD&_sug_type_=&s_from=input&_sug_=n&type=2&page=4&ie=utf8>
+{'name': '吴晓波频道', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502959020&ver=1&signature=PxhdPaM3APRyEasXSrE1S20pHx8vrKBJq9CrjxF1qvewC*APa93LzUepbnMFaf1u7GmqStd-xDUCJc5DvRvvkA=='}
+2017-08-17 16:37:12 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%E9%99%90%E8%B4%AD&_sug_type_=&s_from=input&_sug_=n&type=2&page=4&ie=utf8>
+{'name': '张弦哥', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502959020&ver=1&signature=Sz-MDCaZWGPzVChNWvXr0MHNv5PNQHOoo-ttvjsHfTXszKpXhb*8uLTluwb8Zh*ToIR5YFf9Gd8zEvM3a5kDMw=='}
+2017-08-17 16:37:12 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%E9%99%90%E8%B4%AD&_sug_type_=&s_from=input&_sug_=n&type=2&page=4&ie=utf8>
+{'name': '佛山乐居', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502959020&ver=1&signature=FQNdBV2p-jIpBCe7ms7J0S56nBk-HxZ6Pk3hc6Aj60JJ8HCFm1QH6SD6B-96HnjZtFhEHs7zriwOpZVtuCVtKQ=='}
+2017-08-17 16:37:12 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%E9%99%90%E8%B4%AD&_sug_type_=&s_from=input&_sug_=n&type=2&page=4&ie=utf8>
+{'name': '地产情报站', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502959020&ver=1&signature=hiYNaTd44QmVAUCgrPVtd-us*PrjRF3lZU73oAOqWKCkkd1eLCRPCI5qJYUPGjShEi21fMmEmcASg-J77Bwygw=='}
+2017-08-17 16:37:12 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%E9%99%90%E8%B4%AD&_sug_type_=&s_from=input&_sug_=n&type=2&page=4&ie=utf8>
+{'name': 'e城e家石家庄', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502959020&ver=1&signature=*1J5hFFnWbqQxyTEO9vgH3wdzPMmlJsPVBSUctutl29NMukAH4gI1mVbxHnc4pmNN3HgQAwqq5ADzRoNvpLPHQ=='}
+2017-08-17 16:37:12 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%E9%99%90%E8%B4%AD&_sug_type_=&s_from=input&_sug_=n&type=2&page=4&ie=utf8>
+{'name': '江西日报', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502959020&ver=1&signature=9r9lKFV3PsIneLbiM7jE7s9bYMBKX07xsu9CYeWiusvcg*1TB4D6SbGX9H5IYLlxyRG6rUeTfyted4tgud79aA=='}
+2017-08-17 16:37:12 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%E9%99%90%E8%B4%AD&_sug_type_=&s_from=input&_sug_=n&type=2&page=4&ie=utf8>
+{'name': '19楼', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502959020&ver=1&signature=bmps3JWAv-cZiW9CgbH554tW8JVa20Cb9jjC6KGbWrC9hmc2CBpEI7GBDOWqMaChWNQZnuWOxFa4hb1XRuY7Qw=='}
+2017-08-17 16:37:12 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%E9%99%90%E8%B4%AD&_sug_type_=&s_from=input&_sug_=n&type=2&page=4&ie=utf8>
+{'name': '龙卡信用卡', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502959020&ver=1&signature=2SLUqm*DpKZ07atXSseG*a3eHwyr8gQYwIyhaQm4CXidInIkZiHT5uSlxIWLvfuYvHbrpJVnST20yR843Jq1gA=='}
+2017-08-17 16:37:12 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%E9%99%90%E8%B4%AD&_sug_type_=&s_from=input&_sug_=n&type=2&page=4&ie=utf8>
+{'name': '苏州生活指南', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502959020&ver=1&signature=Xe3IICGdkJU4YqUHvymCnG-julX6enyILav48Ls3wYQ1P8n5KSWfLjfkmktnUPoX4zrXRvPFMfxxX3fVoS1WPQ=='}
+2017-08-17 16:37:12 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%E9%99%90%E8%B4%AD&_sug_type_=&s_from=input&_sug_=n&type=2&page=4&ie=utf8>
+{'name': '大河报', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502959020&ver=1&signature=r2QPHpUyls2Z6GRotBScNnyOYk93V7J7NFH56UBETllkZ3-sEu1QVZywvYW7cW8tKf09XHTN186KsG86qdHZcg=='}
+2017-08-17 16:37:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://weixin.sogou.com/weixin?query=%E9%99%90%E8%B4%AD&_sug_type_=&s_from=input&_sug_=n&type=2&page=5&ie=utf8> (referer: http://weixin.sogou.com/weixin?query=%E9%99%90%E8%B4%AD&_sug_type_=&s_from=input&_sug_=n&type=2&page=4&ie=utf8)
+2017-08-17 16:37:14 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%E9%99%90%E8%B4%AD&_sug_type_=&s_from=input&_sug_=n&type=2&page=5&ie=utf8>
+{'name': '青岛楼市', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502959022&ver=1&signature=WTCybeYluNtxrEaznMBMew3*XSqm6rUln8Kn31k-884dy6uibYw91XK1iH8DZTqiyuXIlrufT5Z39cPkrPDWRg=='}
+2017-08-17 16:37:14 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%E9%99%90%E8%B4%AD&_sug_type_=&s_from=input&_sug_=n&type=2&page=5&ie=utf8>
+{'name': '萧山日报', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502959022&ver=1&signature=AXRvLvZNfLrwMLQjrmeWT2WpwAZ8s8msezdkX9i2DVKZBYMUidkAPmVifqg49MAN4LSao4gAFEHQg9zdm*jvAg=='}
+2017-08-17 16:37:14 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%E9%99%90%E8%B4%AD&_sug_type_=&s_from=input&_sug_=n&type=2&page=5&ie=utf8>
+{'name': '层楼', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502959022&ver=1&signature=T1JyoW082X8iVLsfYJqjx52UDZvJIqG2aEEtYXJez8xdQu2udny-w5ix3ycxWx1zm0emg1DcThNsDyR*ejBnwQ=='}
+2017-08-17 16:37:14 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%E9%99%90%E8%B4%AD&_sug_type_=&s_from=input&_sug_=n&type=2&page=5&ie=utf8>
+{'name': 'P2P评论', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502959022&ver=1&signature=1aik*J1PunMcN7OhK49vv9eO3L-ZPC3Gjk*axTosYSnJvuR2lGQo6zyyux0XqsDKrSWP5Qj1JY30Bh*0UamYqw=='}
+2017-08-17 16:37:14 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%E9%99%90%E8%B4%AD&_sug_type_=&s_from=input&_sug_=n&type=2&page=5&ie=utf8>
+{'name': '杭州之声', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502959022&ver=1&signature=*Ury7Qmue4bIt7DFXvRil*CHO3j9xgx47TAziqpW2ItV0i6yDZ*SMv72xGsA2M9-3FUpRBVt4L9KBxrIeT2*VA=='}
+2017-08-17 16:37:14 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%E9%99%90%E8%B4%AD&_sug_type_=&s_from=input&_sug_=n&type=2&page=5&ie=utf8>
+{'name': '中国经济网', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502959022&ver=1&signature=aXO5WqSr04wwD4WFBwFJzUSIKyMsvPGHg20-yTl5xduMzecgPUVe5hffD8c8tMr16B5ieZJI3HdLwZXGmW7Hpg=='}
+2017-08-17 16:37:14 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%E9%99%90%E8%B4%AD&_sug_type_=&s_from=input&_sug_=n&type=2&page=5&ie=utf8>
+{'name': '郎club', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502959022&ver=1&signature=ytfM9WD8X4xPvKUEbJ**RxLJyO8oW097KfeB4SGccmxTyPPVSm4uQwZwPerpCaa4j6mg23l4tY6C0AGl4-Mrpg=='}
+2017-08-17 16:37:14 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%E9%99%90%E8%B4%AD&_sug_type_=&s_from=input&_sug_=n&type=2&page=5&ie=utf8>
+{'name': '央视财经', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502959022&ver=1&signature=qlS8MxAXwMgZgo*N2ifiPJ3TxNU4u7yI3pfmGRooMHZ4YUcUjmJyphXU7DakCc*sOQu43v9U0he-Cx5hc3cmdg=='}
+2017-08-17 16:37:14 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%E9%99%90%E8%B4%AD&_sug_type_=&s_from=input&_sug_=n&type=2&page=5&ie=utf8>
+{'name': '海南社区', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502959022&ver=1&signature=l25I0ejPJnWcHyx8lmqEljgiMeSIxX9OXUObMx*hH5kxdobIrmT9gqqeMVjQxYKCO7J2STUNTktZOIvyyYkX*g=='}
+2017-08-17 16:37:14 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%E9%99%90%E8%B4%AD&_sug_type_=&s_from=input&_sug_=n&type=2&page=5&ie=utf8>
+{'name': '德科地产频道', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502959022&ver=1&signature=F72vAv5wCoMKQEpQnJe14s*j7lAsJ33sUVn1E0qsSnmVoTbVMmTnS3Hdwp7XSrbUTcrYJq9xxu7eHhU3H**nlQ=='}
+2017-08-17 16:37:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://weixin.sogou.com/weixin?query=%E9%99%90%E8%B4%AD&_sug_type_=&s_from=input&_sug_=n&type=2&page=6&ie=utf8> (referer: http://weixin.sogou.com/weixin?query=%E9%99%90%E8%B4%AD&_sug_type_=&s_from=input&_sug_=n&type=2&page=5&ie=utf8)
+2017-08-17 16:37:17 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%E9%99%90%E8%B4%AD&_sug_type_=&s_from=input&_sug_=n&type=2&page=6&ie=utf8>
+{'name': '东莞日报', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502959024&ver=1&signature=qCqcg9V3OuDs-u2BBrd2YX5FToSj4ciiVcF7985SBgQ71DGXRZ9XfcgySdY524EV3mAiuxaLTyzXHvIlQnwiqA=='}
+2017-08-17 16:37:17 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%E9%99%90%E8%B4%AD&_sug_type_=&s_from=input&_sug_=n&type=2&page=6&ie=utf8>
+{'name': '19楼', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502959024&ver=1&signature=bmps3JWAv-cZiW9CgbH554tW8JVa20Cb9jjC6KGbWrC9hmc2CBpEI7GBDOWqMaChbUfLtMtose*7wVaDOyhZ*w=='}
+2017-08-17 16:37:17 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%E9%99%90%E8%B4%AD&_sug_type_=&s_from=input&_sug_=n&type=2&page=6&ie=utf8>
+{'name': '天津交通广播', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502959024&ver=1&signature=BUE9gFvKPpWHN*70GwfiSpkX-*jlQxf3VceA5fJnnVNhuQCZ0OqDC92CzrPpW2*WOYxfTV52dIVBMFfURTyqHA=='}
+2017-08-17 16:37:17 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%E9%99%90%E8%B4%AD&_sug_type_=&s_from=input&_sug_=n&type=2&page=6&ie=utf8>
+{'name': '沈阳生活', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502959024&ver=1&signature=TLXN2CTtLE16XIq3WqbyajQduY3YUp*fUKvkmQYAIAi5c*2wza5KRspd4abNxEJ3H9kdK76uQzNuGhJyz8LYYA=='}
+2017-08-17 16:37:17 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%E9%99%90%E8%B4%AD&_sug_type_=&s_from=input&_sug_=n&type=2&page=6&ie=utf8>
+{'name': '佛山乐居', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502959024&ver=1&signature=FQNdBV2p-jIpBCe7ms7J0S56nBk-HxZ6Pk3hc6Aj60JJ8HCFm1QH6SD6B-96HnjZf4SraUFWH0Sz7fdXxPeIpQ=='}
+2017-08-17 16:37:17 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%E9%99%90%E8%B4%AD&_sug_type_=&s_from=input&_sug_=n&type=2&page=6&ie=utf8>
+{'name': '简七理财', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502959024&ver=1&signature=CEQ7gDLvyoOJrcB2JYdNEZ8Y5ojf69H7zmHsvKxnPy2e7x5yFrKj8gb7lh-6fB13MUxMG0p6DMlRLgZrQT8pCw=='}
+2017-08-17 16:37:17 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%E9%99%90%E8%B4%AD&_sug_type_=&s_from=input&_sug_=n&type=2&page=6&ie=utf8>
+{'name': '淘大阪', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502959024&ver=1&signature=vD0xywDJwTOCrvtCB7NRWOtcfYvjLRUDaAPLxs6*987QAfn9R6th4AGsX2M0hRIIIKTsRmhznPL5qHU-q20rhA=='}
+2017-08-17 16:37:17 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%E9%99%90%E8%B4%AD&_sug_type_=&s_from=input&_sug_=n&type=2&page=6&ie=utf8>
+{'name': '九江生活', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502959024&ver=1&signature=owjV-wUywFKrFnrGkAcgvet5PlWwCRd9lywlur36*yM8xoXWUqlOAf5HN7L65419uK6eh0*A2Q5rxnndGzJ8GA=='}
+2017-08-17 16:37:17 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%E9%99%90%E8%B4%AD&_sug_type_=&s_from=input&_sug_=n&type=2&page=6&ie=utf8>
+{'name': '栋察楼市', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502959024&ver=1&signature=Ljf9I5x-OSlCOPQf8xHlV25VYlc5ENvBEOn8fCg*fxtMEYL-9tEU6WQFt4QGJFMwfe4aXWQipNBwwX1MUAyiJQ=='}
+2017-08-17 16:37:17 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%E9%99%90%E8%B4%AD&_sug_type_=&s_from=input&_sug_=n&type=2&page=6&ie=utf8>
+{'name': '济南楼市观察', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502959024&ver=1&signature=XuqZ5PiYs91vtkIeG5h-vWyc7R-twQ3p5n18Jox3ArsbiYNzKXUZIt1Fgk8bD0rMadHfeHXdyyB5bglrTWmYkA=='}
+2017-08-17 16:37:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://weixin.sogou.com/weixin?query=%E9%99%90%E8%B4%AD&_sug_type_=&s_from=input&_sug_=n&type=2&page=7&ie=utf8> (referer: http://weixin.sogou.com/weixin?query=%E9%99%90%E8%B4%AD&_sug_type_=&s_from=input&_sug_=n&type=2&page=6&ie=utf8)
+2017-08-17 16:37:19 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%E9%99%90%E8%B4%AD&_sug_type_=&s_from=input&_sug_=n&type=2&page=7&ie=utf8>
+{'name': '层楼', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502959026&ver=1&signature=T1JyoW082X8iVLsfYJqjx52UDZvJIqG2aEEtYXJez8xdQu2udny-w5ix3ycxWx1zbnep4HoG4C1z6YIn1GZtqw=='}
+2017-08-17 16:37:19 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%E9%99%90%E8%B4%AD&_sug_type_=&s_from=input&_sug_=n&type=2&page=7&ie=utf8>
+{'name': '张弦哥', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502959026&ver=1&signature=Sz-MDCaZWGPzVChNWvXr0MHNv5PNQHOoo-ttvjsHfTXszKpXhb*8uLTluwb8Zh*T60OQTs-xYJOHw3PZSPoNzg=='}
+2017-08-17 16:37:19 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%E9%99%90%E8%B4%AD&_sug_type_=&s_from=input&_sug_=n&type=2&page=7&ie=utf8>
+{'name': '羊城攻略', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502959026&ver=1&signature=vJDiT-ZpHDtSIMYBtGqL1r4KbFKy-mgtXtyXsW*toRuFnS8LqqWnT6GwG8xnsVQCNETZ10rkRV5XFNtdSMFWVw=='}
+2017-08-17 16:37:19 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%E9%99%90%E8%B4%AD&_sug_type_=&s_from=input&_sug_=n&type=2&page=7&ie=utf8>
+{'name': '茂名汇', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502959026&ver=1&signature=hAovgTXrQuphHwBNH9KLS5tbSio2wr9dJm4Zpq2F0gnFX82sJMMh7vwE2VAhHvK12cexVyz79kE7DINJdRx*tg=='}
+2017-08-17 16:37:19 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%E9%99%90%E8%B4%AD&_sug_type_=&s_from=input&_sug_=n&type=2&page=7&ie=utf8>
+{'name': '郑州新闻广播', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502959026&ver=1&signature=csO-ynY4y4gKg4jYcB3z*2IQe9k1OzXfzUVCcb0PbDpgpxps5ncX63isLmO0Gwe*4an27nl3u19txZLRI8bb4g=='}
+2017-08-17 16:37:19 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%E9%99%90%E8%B4%AD&_sug_type_=&s_from=input&_sug_=n&type=2&page=7&ie=utf8>
+{'name': '田永成美容整形', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502959026&ver=1&signature=c*PAEzqxfV48PWlPOPjLUg0RkU06t93nbrybx7V4eJfBw1fPaGcFkgjVqFUZ2yqyB7mxL-FmmZMlY7vtAjj4Nw=='}
+2017-08-17 16:37:19 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%E9%99%90%E8%B4%AD&_sug_type_=&s_from=input&_sug_=n&type=2&page=7&ie=utf8>
+{'name': '燕郊网城', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502959026&ver=1&signature=5h5mlqHI7Ce-ObWviKaq9W6Jgnh7gAJB*QWy2lIqkgiwNPRUyqKJCI4X3-NPUJJG72ZD4ToHA-F8PoNNI0EQdw=='}
+2017-08-17 16:37:19 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%E9%99%90%E8%B4%AD&_sug_type_=&s_from=input&_sug_=n&type=2&page=7&ie=utf8>
+{'name': '四海为家', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502959026&ver=1&signature=MgqWnsFWJX3*YV15Wh*EDBU67Er8RSwxAN2OYdIFtXj37OJTlX2A2kQyvksDgeoSkk79BObmDz888ZIcAkgvDQ=='}
+2017-08-17 16:37:19 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%E9%99%90%E8%B4%AD&_sug_type_=&s_from=input&_sug_=n&type=2&page=7&ie=utf8>
+{'name': '河西楼市', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502959026&ver=1&signature=Aq5HPVwa1bXm0MvdMJUUeYlVnOCVOmet*hQ8OkPvQDx8Yry9pge0BTWmLMV3QEulVkO55YT2bJgz1Vm*oJO1Bg=='}
+2017-08-17 16:37:19 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%E9%99%90%E8%B4%AD&_sug_type_=&s_from=input&_sug_=n&type=2&page=7&ie=utf8>
+{'name': '天府新城那些事儿', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502959026&ver=1&signature=W6KTeG0FNrBIeJIL3-i1zFrEPb3zE7vAmKxoMk-V3eO1Z4yfpz-NBxu8jnizEK5x9RklWbTfiCqJ3vEsMHjvag=='}
+2017-08-17 16:37:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://weixin.sogou.com/weixin?query=%E9%99%90%E8%B4%AD&_sug_type_=&s_from=input&_sug_=n&type=2&page=8&ie=utf8> (referer: http://weixin.sogou.com/weixin?query=%E9%99%90%E8%B4%AD&_sug_type_=&s_from=input&_sug_=n&type=2&page=7&ie=utf8)
+2017-08-17 16:37:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%E9%99%90%E8%B4%AD&_sug_type_=&s_from=input&_sug_=n&type=2&page=8&ie=utf8>
+{'name': '青岛房产咨询', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502959029&ver=1&signature=Ws1FV*EmdIzB2kG4AZzCIfMroj3qWAaHTMcmBMghCpT0xQWDxj01S8tvxGXxOZdOkggxfBHLDGHJNpMWUKcY7w=='}
+2017-08-17 16:37:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%E9%99%90%E8%B4%AD&_sug_type_=&s_from=input&_sug_=n&type=2&page=8&ie=utf8>
+{'name': '浔阳晚报', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502959029&ver=1&signature=SnZNgh-fDsoChlx-1C8N8Ju8Ur5*Zxkwg9NI*07VNDwIfNSWW**HNZfufS06kLJRZCvJfF-1hpcl22T2aPC9Wg=='}
+2017-08-17 16:37:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%E9%99%90%E8%B4%AD&_sug_type_=&s_from=input&_sug_=n&type=2&page=8&ie=utf8>
+{'name': '政商阅读', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502959029&ver=1&signature=EfP-MskG4KsEm5NEjcqNVh0NBkJ8eHxks92czqmqS9VD4l-ix8b3DRE2LhAtX1Ch-ztLDmvvzWpmza1CG0yNSg=='}
+2017-08-17 16:37:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%E9%99%90%E8%B4%AD&_sug_type_=&s_from=input&_sug_=n&type=2&page=8&ie=utf8>
+{'name': '四海为家', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502959029&ver=1&signature=MgqWnsFWJX3*YV15Wh*EDBU67Er8RSwxAN2OYdIFtXj37OJTlX2A2kQyvksDgeoSPY0XvjwLU2VL*pIQUqA33Q=='}
+2017-08-17 16:37:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%E9%99%90%E8%B4%AD&_sug_type_=&s_from=input&_sug_=n&type=2&page=8&ie=utf8>
+{'name': '因扎吉FIFA', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502959029&ver=1&signature=7brJwz5s53fssoqfeKVFhqiFfPmyKkiNj*0E1nMQ3FGcZJb9eNy8zb6kGjCrWkSE0x8eVe*4n4Ahwkov5dmZgg=='}
+2017-08-17 16:37:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%E9%99%90%E8%B4%AD&_sug_type_=&s_from=input&_sug_=n&type=2&page=8&ie=utf8>
+{'name': '投资学府', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502959029&ver=1&signature=YCdgq7eBlC2C-2gkYI4Xl5ZeF2ni3pZSe*f2AnSjhZ44mBe8RpAfpgDVTA6ODiUlMVa7KBtS-8YRQ4H5W5Gfpg=='}
+2017-08-17 16:37:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%E9%99%90%E8%B4%AD&_sug_type_=&s_from=input&_sug_=n&type=2&page=8&ie=utf8>
+{'name': '广州房产', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502959029&ver=1&signature=Mgm7bLk4szZgfctv3W-cJi4yKN57YkZyclr3j7uiMsioLRYbylh0ypAlq1VgX9LkRqV3kTh2gTzxf-*s1e5JMA=='}
+2017-08-17 16:37:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%E9%99%90%E8%B4%AD&_sug_type_=&s_from=input&_sug_=n&type=2&page=8&ie=utf8>
+{'name': '因扎吉FIFA', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502959029&ver=1&signature=7brJwz5s53fssoqfeKVFhqiFfPmyKkiNj*0E1nMQ3FGcZJb9eNy8zb6kGjCrWkSE0x8eVe*4n4Ahwkov5dmZgg=='}
+2017-08-17 16:37:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%E9%99%90%E8%B4%AD&_sug_type_=&s_from=input&_sug_=n&type=2&page=8&ie=utf8>
+{'name': '江西政读', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502959029&ver=1&signature=oZ90zvEbVhTwJk5CbBF9wPdp5H0XP9bDua9LULOOBFZJAhMG4552WAfLUGsbvEopTfrS9MkoJh7o1OunyGJs6A=='}
+2017-08-17 16:37:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%E9%99%90%E8%B4%AD&_sug_type_=&s_from=input&_sug_=n&type=2&page=8&ie=utf8>
+{'name': '孟祥远', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502959029&ver=1&signature=JTWoMY*6bETSswIoj5yJu83aiv2ZN92oVQebZRJHD1VqrGbf*mLBlbo8HXnecg2RyUI1K2w*ftclZmfdDie43Q=='}
+2017-08-17 16:37:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://weixin.sogou.com/weixin?query=%E9%99%90%E8%B4%AD&_sug_type_=&s_from=input&_sug_=n&type=2&page=9&ie=utf8> (referer: http://weixin.sogou.com/weixin?query=%E9%99%90%E8%B4%AD&_sug_type_=&s_from=input&_sug_=n&type=2&page=8&ie=utf8)
+2017-08-17 16:37:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%E9%99%90%E8%B4%AD&_sug_type_=&s_from=input&_sug_=n&type=2&page=9&ie=utf8>
+{'name': '西安楼市', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502959031&ver=1&signature=hmfbhzMC3EnclE3G0ZL0pw*TqfQsnalQ4sYnpyUkfiMCNazgjbWxmDNYO*J-KupZv3OFaAOISb4oFBmkJAtuuw=='}
+2017-08-17 16:37:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%E9%99%90%E8%B4%AD&_sug_type_=&s_from=input&_sug_=n&type=2&page=9&ie=utf8>
+{'name': '中原集团金管中心', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502959031&ver=1&signature=FuNdzHrp6TA0YiGOxvNEE2DJU4877zT4kK6Et2QpI6cSV9bHh8TTbd2nuOZ9P9BdX7e8zZCWlVZYVDgDeCOA*g=='}
+2017-08-17 16:37:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%E9%99%90%E8%B4%AD&_sug_type_=&s_from=input&_sug_=n&type=2&page=9&ie=utf8>
+{'name': '碧海银沙房产网', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502959031&ver=1&signature=dmC-FhPt4MpceuAWd6q1xKXIzkafT7DrRWvpD7tJac-t5PAegEFgdbWhxlyo-1DFky9o9A17MfwEpBj2eNAGqg=='}
+2017-08-17 16:37:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%E9%99%90%E8%B4%AD&_sug_type_=&s_from=input&_sug_=n&type=2&page=9&ie=utf8>
+{'name': '赣州630播报', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502959031&ver=1&signature=qD5w72iytkRgtre*IKTqp*Mi4KXtsJPXqxUr0o-cFKPi7ZFewy*3jOXF2T65KG-Ub6Gy505I7oH5OQ35**EvYw=='}
+2017-08-17 16:37:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%E9%99%90%E8%B4%AD&_sug_type_=&s_from=input&_sug_=n&type=2&page=9&ie=utf8>
+{'name': '北京综合频道', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502959031&ver=1&signature=mUwt0W2ylFQScZzt4-Pk5nEh2xGfbMXpb6AWgUKeRgLGu*g92TITo6whWa1FRwKI3s3gf1trZBetlNZKSHqgIQ=='}
+2017-08-17 16:37:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%E9%99%90%E8%B4%AD&_sug_type_=&s_from=input&_sug_=n&type=2&page=9&ie=utf8>
+{'name': '中国经济网', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502959031&ver=1&signature=aXO5WqSr04wwD4WFBwFJzUSIKyMsvPGHg20-yTl5xduMzecgPUVe5hffD8c8tMr1lLQFPazgWD0k39-R2XLM2A=='}
+2017-08-17 16:37:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%E9%99%90%E8%B4%AD&_sug_type_=&s_from=input&_sug_=n&type=2&page=9&ie=utf8>
+{'name': '霸都楼市', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502959031&ver=1&signature=sTnx6RXSLYSkYuMLObN1664h7KRzqfwndodGF1xGo6PZ6lBOWs*EdQeRxsN1miqzxCNlF824Xdm-inuiMTcNcw=='}
+2017-08-17 16:37:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%E9%99%90%E8%B4%AD&_sug_type_=&s_from=input&_sug_=n&type=2&page=9&ie=utf8>
+{'name': '栋察楼市', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502959031&ver=1&signature=Ljf9I5x-OSlCOPQf8xHlV25VYlc5ENvBEOn8fCg*fxtMEYL-9tEU6WQFt4QGJFMw0oDNJAQSEKgWt**W5HJ3iw=='}
+2017-08-17 16:37:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%E9%99%90%E8%B4%AD&_sug_type_=&s_from=input&_sug_=n&type=2&page=9&ie=utf8>
+{'name': '华商报', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502959031&ver=1&signature=oWQ6l0dmX*b6mEconHeAMfakPTodfbM75Dd*-IZ57RT4*Qo1eyD8PFubAyZDJ8K*x*bUX*PkTzkggVClbys4Yg=='}
+2017-08-17 16:37:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%E9%99%90%E8%B4%AD&_sug_type_=&s_from=input&_sug_=n&type=2&page=9&ie=utf8>
+{'name': '19楼', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502959031&ver=1&signature=bmps3JWAv-cZiW9CgbH554tW8JVa20Cb9jjC6KGbWrC9hmc2CBpEI7GBDOWqMaChborXMgKSiN7bkGZbudCxJg=='}
+2017-08-17 16:37:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://weixin.sogou.com/weixin?query=%E9%99%90%E8%B4%AD&_sug_type_=&s_from=input&_sug_=n&type=2&page=10&ie=utf8> (referer: http://weixin.sogou.com/weixin?query=%E9%99%90%E8%B4%AD&_sug_type_=&s_from=input&_sug_=n&type=2&page=9&ie=utf8)
+2017-08-17 16:37:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%E9%99%90%E8%B4%AD&_sug_type_=&s_from=input&_sug_=n&type=2&page=10&ie=utf8>
+{'name': '上海司法拍卖房源', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502959034&ver=1&signature=VYV-RnPO6nnsRBMXEe8EwvwxTkyA*lLLvWGOVo0-dpYhUA4ZwyMLBrST2eeSV7duH5IJhK7t4yJ*gVUrv4hPNw=='}
+2017-08-17 16:37:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%E9%99%90%E8%B4%AD&_sug_type_=&s_from=input&_sug_=n&type=2&page=10&ie=utf8>
+{'name': '佛山乐居', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502959034&ver=1&signature=FQNdBV2p-jIpBCe7ms7J0S56nBk-HxZ6Pk3hc6Aj60JJ8HCFm1QH6SD6B-96HnjZzm3G*BaPo3vR0*8NhwDACA=='}
+2017-08-17 16:37:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%E9%99%90%E8%B4%AD&_sug_type_=&s_from=input&_sug_=n&type=2&page=10&ie=utf8>
+{'name': '微友房产帮', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502959034&ver=1&signature=ddficWmpu-wBK*wvYNF5CuaMZdZOLISykCaYn-KT5rxghzWyGxGEEoaPzdA8UHmmXIvcsm*2PbiSlN8JEU0FFw=='}
+2017-08-17 16:37:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%E9%99%90%E8%B4%AD&_sug_type_=&s_from=input&_sug_=n&type=2&page=10&ie=utf8>
+{'name': '新赣州房产网', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502959034&ver=1&signature=skOmZUxAlc1Z2yQf2oCrRjjLVy-*wZBnTPx6AJK*ocRBDMOhbQpzw5FzNOcYS6Qw9x8XRkSdVPos9CFSMSwisg=='}
+2017-08-17 16:37:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%E9%99%90%E8%B4%AD&_sug_type_=&s_from=input&_sug_=n&type=2&page=10&ie=utf8>
+{'name': '佛山乐居', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502959034&ver=1&signature=FQNdBV2p-jIpBCe7ms7J0S56nBk-HxZ6Pk3hc6Aj60JJ8HCFm1QH6SD6B-96HnjZzm3G*BaPo3vR0*8NhwDACA=='}
+2017-08-17 16:37:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%E9%99%90%E8%B4%AD&_sug_type_=&s_from=input&_sug_=n&type=2&page=10&ie=utf8>
+{'name': '家在宁波网', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502959034&ver=1&signature=eiL-uNJ-lJNZBYhUzRcralSjY3rfO9H-agRc-d1wHZ0ijrvBK48Ah4qgb6FBg8JcWTSeTywFq7AtR0Jxj6X6Zg=='}
+2017-08-17 16:37:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%E9%99%90%E8%B4%AD&_sug_type_=&s_from=input&_sug_=n&type=2&page=10&ie=utf8>
+{'name': '易居中国', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502959034&ver=1&signature=qtPlnhOR5A2fmsoVTdSuTZBZedwI5hLhHT8LxiQ05tynU9F6ASkWxE6CUtKGKejuJxpoOAW3hqfBv8CGTcBxLQ=='}
+2017-08-17 16:37:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%E9%99%90%E8%B4%AD&_sug_type_=&s_from=input&_sug_=n&type=2&page=10&ie=utf8>
+{'name': '中江国际出国服务', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502959034&ver=1&signature=1P9xXqrLeD7Ao7zNy67p8SHGUtazAjmjbORjnd0vdXsb6kbunRTlVtexOhdzmkQAzAXMJYvd1QK7EtpCCm1QaQ=='}
+2017-08-17 16:37:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%E9%99%90%E8%B4%AD&_sug_type_=&s_from=input&_sug_=n&type=2&page=10&ie=utf8>
+{'name': '佛山公交', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502959034&ver=1&signature=LhbGU0TiHjib-pSy*p4*tyRGUjn7NGp74CWGZNx2z5j3PfrcymnpjrYMfxhSKbIPbnD32p1p1UikPTsGzGpG8g=='}
+2017-08-17 16:37:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://weixin.sogou.com/weixin?query=%E9%99%90%E8%B4%AD&_sug_type_=&s_from=input&_sug_=n&type=2&page=10&ie=utf8>
+{'name': '因扎吉FIFA', 'url': 'http://mp.weixin.qq.com/profile?src=3&timestamp=1502959034&ver=1&signature=7brJwz5s53fssoqfeKVFhqiFfPmyKkiNj*0E1nMQ3FGcZJb9eNy8zb6kGjCrWkSEr77hy7go5MGmkhRYvOFtmg=='}
+2017-08-17 16:37:26 [scrapy.core.engine] INFO: Closing spider (finished)
+2017-08-17 16:37:26 [scrapy.extensions.feedexport] INFO: Stored csv feed (100 items) in: temp/xian-gou.csv
+2017-08-17 16:37:26 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 4745,
+ 'downloader/request_count': 10,
+ 'downloader/request_method_count/GET': 10,
+ 'downloader/response_bytes': 130671,
+ 'downloader/response_count': 10,
+ 'downloader/response_status_count/200': 10,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2017, 8, 17, 8, 37, 26, 939127),
+ 'item_scraped_count': 100,
+ 'log_count/DEBUG': 111,
+ 'log_count/INFO': 8,
+ 'request_depth_max': 9,
+ 'response_received_count': 10,
+ 'scheduler/dequeued': 10,
+ 'scheduler/dequeued/memory': 10,
+ 'scheduler/enqueued': 10,
+ 'scheduler/enqueued/memory': 10,
+ 'start_time': datetime.datetime(2017, 8, 17, 8, 37, 6, 124254)}
+2017-08-17 16:37:26 [scrapy.core.engine] INFO: Spider closed (finished)
